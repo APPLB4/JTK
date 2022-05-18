@@ -7,9 +7,9 @@ module.exports = ({ env }) => ({
         host: env('DATABASE_HOST', 'cluster0.ad4k3.mongodb.net'),
         srv: env.bool('DATABASE_SRV', true),
         port: env.int('DATABASE_PORT', 27017),
-        database: env('DATABASE_NAME', 'cms-jtk'),
-        username: env('DATABASE_USERNAME', 'mongodb'),
-        password: env('DATABASE_PASSWORD', 'mongodb'),
+        database: env('DATABASE_NAME'),
+        username: env('DATABASE_USERNAME'),
+        password: env('DATABASE_PASSWORD'),
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
