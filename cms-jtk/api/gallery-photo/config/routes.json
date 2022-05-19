@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/galleries",
-      "handler": "gallery.find",
+      "path": "/gallery-photos",
+      "handler": "gallery-photo.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/galleries/count",
-      "handler": "gallery.count",
+      "path": "/gallery-photos/count",
+      "handler": "gallery-photo.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/galleries/:id",
-      "handler": "gallery.findOne",
+      "path": "/gallery-photos/:id",
+      "handler": "gallery-photo.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/galleries",
-      "handler": "gallery.create",
+      "path": "/gallery-photos",
+      "handler": "gallery-photo.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/galleries/:id",
-      "handler": "gallery.update",
+      "path": "/gallery-photos/:id",
+      "handler": "gallery-photo.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/galleries/:id",
-      "handler": "gallery.delete",
+      "path": "/gallery-photos/:id",
+      "handler": "gallery-photo.delete",
       "config": {
         "policies": []
       }

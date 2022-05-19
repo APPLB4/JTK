@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "gallery",
+  "collectionName": "gallery_photo",
   "info": {
-    "name": "gallery"
+    "name": "gallery_photo"
   },
   "options": {
     "increments": true,
@@ -18,23 +18,13 @@
       "minLength": 1
     },
     "image": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
-    "video": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     }
   }
