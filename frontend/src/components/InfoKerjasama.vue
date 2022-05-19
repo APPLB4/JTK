@@ -15,21 +15,14 @@
                         <div>
                             <div class=" flex flex-wrap ">
 
-                                <!-- Bagian Left Side Gan -->
-                              
-                                <div class="  lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ... ">
-                                  
-                                    <h1 class=" text-white font-semibold text-5xl mt-4 mb-24">Jurusan</h1>
-                                    <p class=" text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                </div>
 
                   
 
                                   <!-- Bagian Right Side Gan ------------------------------------------------------------------------------------------------------------------------------------------------>
-                                    <div class=" lg:w-1/4 sm:w-full  ...">
+                                    <div class=" pr-4 lg:w-1/4 sm:w-full  ...">
                                             <section class="mb-4">
-                                              <div class="border-l-2  pl-4">
-                                                <h1 class=" text-white flex flex-wrap font-semibold text-2xl pt-5 mb-10 " >Artikel Lainnya</h1>
+                                              <div class="border-r-2  pr-4">
+                                                <h1 class=" text-white flex flex-wrap font-semibold text-2xl pt-5 mb-10 " >Info Kerjasama</h1>
                                                   
                                                   <div class="flex mb-10 bg-white">
                                                            <img class=" mr-4 min-h-0 min-w-0 float-left rounded-md" src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="blog">
@@ -75,12 +68,17 @@
                                               </div>
                                             </section>
 
-                
-
-
                                     </div>
 
-                            </div>
+                                                                <!-- Bagian Left Side Gan -->
+                            
+                                                            <div class="  lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ... ">
+                                                            
+                                                                <h1 class=" text-white font-semibold text-5xl mt-4 mb-24">Info Kerjasama</h1>
+                                                                <p class=" text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                            </div>
+
+                </div>
             </div>
       </div>
 
@@ -97,6 +95,7 @@ import axios from 'axios';
 
 
 export default Vue.extend({
+    name: "InfoKerjasama",
     components:{Footer},
 
   data() {
