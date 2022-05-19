@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 1
+    },
+    "deskripsi": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 10000,
+      "minLength": 1
+    },
+    "article_medias": {
+      "via": "article",
+      "collection": "article-media"
+    }
+  }
+}

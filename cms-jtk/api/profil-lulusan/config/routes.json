@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/profil-lulusans",
+      "handler": "profil-lulusan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/profil-lulusans/count",
+      "handler": "profil-lulusan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/profil-lulusans/:id",
+      "handler": "profil-lulusan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/profil-lulusans",
+      "handler": "profil-lulusan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/profil-lulusans/:id",
+      "handler": "profil-lulusan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/profil-lulusans/:id",
+      "handler": "profil-lulusan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

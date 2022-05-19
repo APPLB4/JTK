@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prodi",
+  "info": {
+    "name": "prodi"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namaprodi": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 1
+    },
+    "visimisi": {
+      "type": "text",
+      "required": true,
+      "maxLength": 10000,
+      "minLength": 1
+    },
+    "profil_lulusans": {
+      "via": "prodi",
+      "collection": "profil-lulusan"
+    }
+  }
+}

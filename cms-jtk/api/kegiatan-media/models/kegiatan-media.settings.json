@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kegiatan_media",
+  "info": {
+    "name": "kegiatan_media",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 1
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "kegiatan": {
+      "model": "kegiatan",
+      "via": "kegiatan_medias"
+    }
+  }
+}

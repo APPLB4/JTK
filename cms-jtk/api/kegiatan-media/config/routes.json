@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kegiatan-medias",
+      "handler": "kegiatan-media.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kegiatan-medias/count",
+      "handler": "kegiatan-media.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kegiatan-medias/:id",
+      "handler": "kegiatan-media.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kegiatan-medias",
+      "handler": "kegiatan-media.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kegiatan-medias/:id",
+      "handler": "kegiatan-media.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kegiatan-medias/:id",
+      "handler": "kegiatan-media.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

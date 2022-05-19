@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kegiatans",
+      "handler": "kegiatan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kegiatans/count",
+      "handler": "kegiatan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kegiatans/:id",
+      "handler": "kegiatan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kegiatans",
+      "handler": "kegiatan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kegiatans/:id",
+      "handler": "kegiatan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kegiatans/:id",
+      "handler": "kegiatan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

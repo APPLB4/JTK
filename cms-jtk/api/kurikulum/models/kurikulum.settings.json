@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kurikulum",
+  "info": {
+    "name": "kurikulum"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string",
+      "required": true,
+      "maxLength": 10000,
+      "minLength": 1
+    },
+    "deskripsi": {
+      "type": "text",
+      "required": true,
+      "maxLength": 10000,
+      "minLength": 1
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

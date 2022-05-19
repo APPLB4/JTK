@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jurusan",
+  "info": {
+    "name": "jurusan"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string",
+      "required": true,
+      "maxLength": 10000,
+      "minLength": 1
+    },
+    "deskripsi": {
+      "type": "richtext",
+      "maxLength": 10000,
+      "minLength": 1,
+      "required": true
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dosen",
+  "info": {
+    "name": "dosen"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 1
+    },
+    "gender": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "minLength": 1
+    },
+    "nip": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "minLength": 1
+    },
+    "jabatan": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "minLength": 1
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "kontak": {
+      "type": "string",
+      "required": true,
+      "maxLength": 15,
+      "minLength": 1
+    },
+    "expertise": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 1
+    },
+    "matkul": {
+      "type": "text",
+      "maxLength": 1000,
+      "required": true,
+      "minLength": 1
+    },
+    "pengalaman": {
+      "type": "text",
+      "required": true,
+      "maxLength": 10000,
+      "minLength": 1
+    },
+    "publikasi": {
+      "type": "text",
+      "maxLength": 10000,
+      "minLength": 1,
+      "required": true
+    }
+  }
+}

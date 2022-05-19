@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fasilitas",
+  "info": {
+    "name": "fasilitas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namafasilitas": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500,
+      "minLength": 1
+    }
+  }
+}

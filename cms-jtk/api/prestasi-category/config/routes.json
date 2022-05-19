@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/prestasi-categories",
+      "handler": "prestasi-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestasi-categories/count",
+      "handler": "prestasi-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestasi-categories/:id",
+      "handler": "prestasi-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/prestasi-categories",
+      "handler": "prestasi-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/prestasi-categories/:id",
+      "handler": "prestasi-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/prestasi-categories/:id",
+      "handler": "prestasi-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
