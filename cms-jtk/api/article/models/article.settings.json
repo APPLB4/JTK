@@ -18,15 +18,13 @@
       "maxLength": 100,
       "minLength": 1
     },
-    "deskripsi": {
-      "type": "richtext",
-      "required": true,
-      "maxLength": 10000,
-      "minLength": 1
-    },
     "article_medias": {
       "via": "article",
       "collection": "article-media"
+    },
+    "deskripsi": {
+      "type": "text",
+      "maxLength": 10000
     }
   }
 }

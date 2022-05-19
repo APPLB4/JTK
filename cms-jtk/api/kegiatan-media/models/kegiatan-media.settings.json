@@ -31,8 +31,8 @@
       "pluginOptions": {}
     },
     "kegiatan": {
-      "model": "kegiatan",
-      "via": "kegiatan_medias"
+      "via": "kegiatan_medias",
+      "model": "kegiatan"
     }
   }
 }
