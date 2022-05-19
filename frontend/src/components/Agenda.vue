@@ -12,7 +12,7 @@
 
         <div>
         <h1 class=" text-white text-4xl mb-10 font-serif">
-          Artikel
+          Agenda
         </h1>
       </div>
           <div class="flex flex-wrap -m-4">
@@ -144,6 +144,8 @@
     </a>
     </div>
 
+    
+
 
 <Footer />
 </div>
@@ -153,6 +155,8 @@
 <script lang="ts">
 import Vue from "vue";
 import Footer from "./Footer.vue"
+
+
 
 export default Vue.extend({
     components:{Footer},
