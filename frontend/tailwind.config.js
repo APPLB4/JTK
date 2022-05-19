@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        JTK : '#28345c'
+        JTK : '#28345c',
+        second : '#905cf4'
       }
     },
    
