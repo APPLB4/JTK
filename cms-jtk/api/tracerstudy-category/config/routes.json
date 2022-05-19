@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tracerstudy-categories",
+      "handler": "tracerstudy-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tracerstudy-categories/count",
+      "handler": "tracerstudy-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tracerstudy-categories/:id",
+      "handler": "tracerstudy-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tracerstudy-categories",
+      "handler": "tracerstudy-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tracerstudy-categories/:id",
+      "handler": "tracerstudy-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tracerstudy-categories/:id",
+      "handler": "tracerstudy-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

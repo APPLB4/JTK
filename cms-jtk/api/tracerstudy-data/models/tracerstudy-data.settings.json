@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tracerstudy_data",
+  "info": {
+    "name": "tracerstudy_data"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tahun": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "tracerstudy_category": {
+      "via": "tracerstudy_data",
+      "model": "tracerstudy-category"
+    }
+  }
+}

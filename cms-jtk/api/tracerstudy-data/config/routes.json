@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/tracerstudies",
-      "handler": "tracerstudy.find",
+      "path": "/tracerstudy-data",
+      "handler": "tracerstudy-data.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/tracerstudies/count",
-      "handler": "tracerstudy.count",
+      "path": "/tracerstudy-data/count",
+      "handler": "tracerstudy-data.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/tracerstudies/:id",
-      "handler": "tracerstudy.findOne",
+      "path": "/tracerstudy-data/:id",
+      "handler": "tracerstudy-data.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/tracerstudies",
-      "handler": "tracerstudy.create",
+      "path": "/tracerstudy-data",
+      "handler": "tracerstudy-data.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/tracerstudies/:id",
-      "handler": "tracerstudy.update",
+      "path": "/tracerstudy-data/:id",
+      "handler": "tracerstudy-data.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/tracerstudies/:id",
-      "handler": "tracerstudy.delete",
+      "path": "/tracerstudy-data/:id",
+      "handler": "tracerstudy-data.delete",
       "config": {
         "policies": []
       }

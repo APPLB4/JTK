@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tracerstudy_category",
+  "info": {
+    "name": "tracerstudy_category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kategori": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 1
+    },
+    "tracerstudy_data": {
+      "collection": "tracerstudy-data",
+      "via": "tracerstudy_category"
+    }
+  }
+}
