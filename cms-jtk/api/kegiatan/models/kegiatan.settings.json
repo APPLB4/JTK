@@ -25,6 +25,11 @@
     "deskripsi": {
       "type": "text",
       "maxLength": 10000
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "maxLength": 10
     }
   }
 }
