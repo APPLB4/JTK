@@ -18,8 +18,8 @@
       "minLength": 1
     },
     "prestasis": {
-      "collection": "prestasi",
-      "via": "prestasi_category"
+      "via": "prestasi_category",
+      "collection": "prestasi"
     }
   }
 }

@@ -35,6 +35,10 @@
       "required": true,
       "maxLength": 10000,
       "minLength": 1
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "judul"
     }
   }
 }

@@ -18,8 +18,8 @@
       "minLength": 1
     },
     "tracerstudy_data": {
-      "collection": "tracerstudy-data",
-      "via": "tracerstudy_category"
+      "via": "tracerstudy_category",
+      "collection": "tracerstudy-data"
     }
   }
 }

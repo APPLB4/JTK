@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "article_media",
+  "collectionName": "gallery_video",
   "info": {
-    "name": "article_media",
+    "name": "gallery_video",
     "description": ""
   },
   "options": {
@@ -12,28 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "slug": {
-      "type": "string",
-      "required": true,
-      "minLength": 1,
-      "maxLength": 100,
-      "unique": true
-    },
-    "media": {
+    "video": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "files",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
-    "article": {
-      "via": "article_medias",
-      "model": "article"
+    "slug": {
+      "type": "uid"
     }
   }
 }

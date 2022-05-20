@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "prodi",
   "info": {
-    "name": "prodi"
+    "name": "prodi",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -26,6 +27,14 @@
     "profil_lulusans": {
       "via": "prodi",
       "collection": "profil-lulusan"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "namaprodi"
+    },
+    "profillulusan": {
+      "type": "text",
+      "required": true
     }
   }
 }
