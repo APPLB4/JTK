@@ -38,6 +38,8 @@
                                                  v-for="(tag,index) in article.slice(0,4)"
                                                 :key="tag">
 
+                                                     <router-link :to="{ name: 'ArticleRead', params: { id:index, judul:'article', image:article[index].article_medias[0].media.url, deskripsi:tag.deskripsi  }}">
+
                                                      <div class="flex mb-10 bg-white">
                                                            <img class=" mr-4 min-h-0 min-w-0 float-left  w-full" v-bind:src="article[index].article_medias[0].media.url">
                                         
@@ -45,6 +47,8 @@
                                                               <h2 class="   text-indigo-900 tracking-widest text-md title-font font-medium text-gray-400 mb-1">{{tag.judul}}</h2>
                                                           </div>
                                                     </div>
+
+                                                    </router-link>
 
                                                 </div>
                                                   
