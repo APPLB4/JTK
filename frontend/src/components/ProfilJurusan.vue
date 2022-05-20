@@ -19,20 +19,49 @@
           <!-- Bagian Left Side Gan -->
 
           <div class="lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ...">
-            <h1 class="text-white font-semibold text-5xl mt-4 mb-24">
-              Jurusan
+            <h1 class="text-white font-semibold text-4xl mt-4 mb-24">
+              JURUSAN TEKNIK KOMPUTER DAN INFORMATIKA
             </h1>
-            <p class="text-white">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+            <img
+              src="/img/profil-jurusan.png"
+              style="max-width: 60%; height: auto"
+              class="object-center mx-auto mb-10"
+              alt=""
+            />
+            <p class="text-white text-justify">
+              &emsp;Jurusan Teknik Komputer dan Informatika Politeknik Negeri
+              Bandung (lebih dikenal dengan singkatan JTK) merupakan jurusan
+              penyelenggara pendidikan diploma bidang teknologi informasi
+              pertama di Indonesia. Jurusan ini telah menyelenggarakan
+              pendidikan D-3 bidang teknik komputer dan informatika sejak 1977
+              dan pendidikan D-4 sejak 2009. Dengan daya tampung sekitar 96
+              mahasiswa per tahun, sampai saat ini JTK telah menghasilkan lebih
+              dari 2.500 alumni yang bekerja pada berbagai sektor industri, baik
+              di dalam maupun di luar negeri. Selain menjalankan pendidikan, JTK
+              juga menyelenggarakan penelitian dan pengabdian kepada masyarakat
+              dalam bidang teknologi informasi. Sebagai jurusan pertama yang
+              menyelenggarakan pendidikan profesional bidang teknologi
+              informasi, JTK selalu dijadikan tolok ukur dan telah banyak
+              memberikan bantuan teknis dan non-teknis kepada institusi lain
+              maupun kepada masyarakat umum. Beberapa aktivitas yang sering
+              dilakukan di antaranya adalah pembinaan institusi, pelatihan
+              bidang TI, konsultasi pemanfaatan TI untuk menunjang kegiatan
+              kerja, pengembangan sistem informasi, dan lab/bengkel komputer
+              layanan masyarakat.
+            </p>
+            <p class="text-white text-justify">
+              &emsp;JTK memiliki visi untuk menjadi jurusan unggulan dan
+              terdepan di bidang pengkajian, penerapan dan pengembangan
+              teknologi informasi, yang diakui baik di tingkat nasional maupun
+              internasional. Visi ini dijabarkan ke dalam misi sebagai berikut:
+              Menyelenggarakan pendidikan yang menghasilkan sumber daya manusia
+              yang profesional dibidang teknologi informasi; Menyelenggarakan
+              program penelitian yang menghasilkan produk unggulan dibidang
+              teknologi informasi; Meningkatkan pemanfaatan teknologi informasi
+              di lingkungan internal maupun lingkungan eksternal (industri,
+              pemerintah dan masyarakat umum); Menjadi tempat bagi sivitas
+              akademika untuk saling bertukar gagasan dalam lingkungan yang
+              kondusif.
             </p>
           </div>
 
