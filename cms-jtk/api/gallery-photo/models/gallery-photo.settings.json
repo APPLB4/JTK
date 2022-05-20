@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "gallery_photo",
   "info": {
-    "name": "gallery_photo"
+    "name": "gallery_photo",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "slug": {
-      "type": "string",
-      "required": true,
-      "maxLength": 100,
-      "minLength": 1
-    },
     "image": {
       "model": "file",
       "via": "related",
@@ -26,6 +21,9 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid"
     }
   }
 }

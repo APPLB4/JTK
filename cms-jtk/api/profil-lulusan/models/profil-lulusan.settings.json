@@ -46,8 +46,8 @@
       "pluginOptions": {}
     },
     "prodi": {
-      "model": "prodi",
-      "via": "profil_lulusans"
+      "via": "profil_lulusans",
+      "model": "prodi"
     }
   }
 }

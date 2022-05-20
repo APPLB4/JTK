@@ -16,7 +16,8 @@
       "type": "string",
       "required": true,
       "minLength": 1,
-      "maxLength": 100
+      "maxLength": 100,
+      "unique": true
     },
     "media": {
       "model": "file",
