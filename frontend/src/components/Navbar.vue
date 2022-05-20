@@ -2,7 +2,7 @@
   <div>
     <div class="absolute navbar-transparent z-10 w-full shadow-sm">
       <!-- Navbar -->
-      <div class="flex items-center justify-between px-4 py-1 sm:p-0">
+      <div class="flex items-center justify-between px-4 py-2 sm:p-0">
         <a href="/">
           <img
             class="img-logo"
@@ -10,7 +10,7 @@
             src="/img/logo-polban.png"
           />
         </a>
-        <!-- <div class="sm:hidden">
+        <div class="sm:hidden">
           <button
             @click="isOpen = !isOpen"
             type="button"
@@ -34,14 +34,14 @@
               />
             </svg>
           </button>
-        </div> -->
+        </div>
 
         <nav
           :class="isOpen ? 'block' : 'hidden'"
           class="px-2 mr-4 sm:flex sm:p-0"
         >
           <a
-            href="#"
+            href="/"
             class="
               dropdown
               navlist
@@ -59,12 +59,9 @@
             "
           >
             <div class="text-white">Home</div>
-            <div class="dropdown-content absolute hidden">
-              <a href="#">dropdown</a>
-            </div>
           </a>
           <a
-            href="#"
+            href="/"
             class="
               dropdown
               navlist
@@ -84,7 +81,7 @@
             <div class="text-white">Gallery</div>
           </a>
           <a
-            href="#"
+            href="/"
             class="
               dropdown
               navlist
@@ -102,9 +99,15 @@
             "
           >
             <div class="text-white">Profil</div>
+            <div class="dropdown-content absolute hidden">
+              <a href="/">Pegawai</a>
+              <a href="/ProfilProdi">Prodi</a>
+              <a href="/ProfilJurusan">Jurusan</a>
+              <a href="/">Tracer Studi</a>
+            </div>
           </a>
           <a
-            href="#"
+            href="/"
             class="
               dropdown
               navlist
@@ -122,9 +125,13 @@
             "
           >
             <div class="text-white">Akademik</div>
+            <div class="dropdown-content absolute hidden">
+              <a href="/">Kurikulum</a>
+              <a href="/Prestasi">Prestasi</a>
+            </div>
           </a>
           <a
-            href="#"
+            href="/"
             class="
               dropdown
               navlist
@@ -144,7 +151,7 @@
             <div class="text-white">Fasilitas</div>
           </a>
           <a
-            href="#"
+            href="/Agenda"
             class="
               dropdown
               navlist
@@ -164,7 +171,7 @@
             <div class="text-white">Agenda</div>
           </a>
           <a
-            href="#"
+            href="/InfoKerjasama"
             class="
               dropdown
               navlist
@@ -175,27 +182,49 @@
               justify-center
               block
               py-3
-              px-5
+              px-1
               text-white
               font-lato font-semibold
               rounded
-              mx-3
+              mx-1
             "
             style="white-space: nowrap"
           >
             <div class="text-white">Kerja Sama</div>
+          </a>
+          <a
+            href="/TujuanKontak"
+            class="
+              dropdown
+              navlist
+              relative
+              inline-block
+              block
+              flex
+              items-center
+              justify-center
+              p-3
+              text-white
+              font-lato font-semibold
+              rounded
+              ml-3
+              mr-8
+            "
+          >
+            <div class="text-white">Kontak</div>
           </a>
           <div class="flex flex-row mt3 w-full">
             <div class="flex justify-center items-center">
               <div class="email-input-box w-full ml5 mr5">
                 <input
                   id="search-card"
+                  style="width: 220px"
                   class="
                     w-full
                     font-lato font-normal
                     text-l
-                    ml-5
-                    mr-5
+                    ml-3
+                    mt-2
                     outline-none
                     color-white
                     flex
@@ -217,7 +246,7 @@
                   mt4
                 "
               >
-                Search..
+                Search
               </button>
             </div>
           </div>
@@ -240,7 +269,7 @@
 
 .bg-header {
   background: #142e46;
-  height: 70px;
+  height: 75px;
 }
 
 .dropdown-content a:hover {
@@ -286,7 +315,7 @@
   background: #142e46;
 }
 .email-subscribe-btn {
-  width: 100px;
+  width: 80px;
   height: 38px;
   background: #8d5cf6;
   border: 0.3px solid #142e46;

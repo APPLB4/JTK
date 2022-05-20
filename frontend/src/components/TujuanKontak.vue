@@ -144,7 +144,7 @@
                   dark:text-gray-300
                   text-3xl
                 "
-                >nama
+                >Nama
               </label>
               <input
                 type="text"
