@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import LandingPage from '../views/LandingPageView.vue'
+// import LandingPage from '../views/LandingPageView.vue'
 import ListArticle from '../views/ListArticleView.vue'
 import ProfilJurusan from '../views/ProfilJurusanView.vue'
 import ProfilProdi from '../views/ProfilProdiView.vue'
@@ -15,14 +15,14 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'LandingPage',
-    component: LandingPage
-  },
-  {
-    path: '/Article',
     name: 'ListArticle',
     component: ListArticle
   },
+  // {
+  //   path: '/Article',
+  //   name: 'ListArticle',
+  //   component: ListArticle
+  // },
   {
     path: '/ProfilJurusan',
     name: 'ProfilJurusan',
@@ -64,7 +64,7 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
-  props: true 
+  props: true
 })
 
 export default router

@@ -85,6 +85,7 @@
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault1"
+                  checked
                 />
                 <label
                   class="form-check-label inline-block text-gray-800"
@@ -283,12 +284,13 @@
                     text-white
                     flex flex-wrap
                     font-semibold
-                    text-2xl
+                    text-xl
                     pt-5
                     mb-10
                   "
                 >
-                  Gegerkalong
+                  Jl. Gegerkalong Hilir, Ciwaruga, Kec. Parongpong, Kabupaten
+                  Bandung Barat, Jawa Barat
                 </h1>
               </div>
             </section>

@@ -28,17 +28,36 @@
         <div class="my-10">
           <img
             class="m-auto w-1/2 rounded-md"
-            src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+            src="/img/juara.jpg"
             alt="blog"
           />
         </div>
 
         <div class="m-10">
-          <h1 class="text-white text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni culpa
-            veniam dolorem officia? Dolorem quaerat suscipit quia ex. Impedit,
-            optio unde fugit suscipit numquam ducimus corporis error officia
-            laudantium sunt.
+          <h1 class="text-white text-xl text-justify">
+            Sabtu (14/11/2020), Politeknik Negeri Bandung menggelar Sidang
+            terbuka senat Politeknik Negeri Bandung Wisuda Program Magister
+            Terapan, Sarjana Terapan, dan Diploma Tahun Akademik 2019/2020.
+            Wisuda diselenggarakan secara offline di Pendopo Tony Seowandito dan
+            online melalui media Youtube sebagai antisipasi penyebaran virus
+            covid-19. Berikut merupakan video live-streaming wisuda Polban 2020.
+            Acara dimulai pada 8.50 WIB dan berakhir pukul 12.00 WIB. Pada
+            wisuda tahun ini JTK berhasil meraih gelar wisudawan terbaik D3
+            se-Polban berkat M Wahyu Maulana Akbar (171511019).
+          </h1>
+          <h1 class="text-white text-xl text-justify">
+            Wisudawan dari Jurusan Teknik Komputer dan Informatika mengikuti
+            acara ramah tamah mulai pukul 13.00 WIB yang diselenggarakan oleh
+            manejemen JTK lewat aplikasi zoom. Kegiatan tersebut diisi dengan
+            sambutan manajemen, wisudawan terbaik, serta industri. Selanjutnya
+            dilaksanakan pula sesi tanya jawab dan penyampaian kesan dan pesan
+            oleh wisudawan dari JTK. Wisuda tahun 2020 ini adalah wisuda ke 30
+            tahun, setelah JTK pindah ke kampus Ciwaruga. Sebelumnya JTK,
+            beraada di kampus Ganesha, dibawah binaan ITB. Harapan kita semua
+            agar JTK semakin dapat menjalankan amanahnya sebagai institusi
+            pendidikan yang cukup tua. Selamat kepada wisudawan D3 dan D4 JTK
+            Polban ! Semoga ilmu yang telah didapatkan selama kuliah di JTK
+            dapat menjadi bekal untuk melangkah lebih jauh ke puncak kesuksesan
           </h1>
         </div>
       </div>

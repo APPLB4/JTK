@@ -24,7 +24,7 @@
             </h1>
             <img class="mx-auto mb-10" v-bind:src="$route.params.image" />
 
-            <p class="text-white">{{ $route.params.deskripsi }}</p>
+            <p class="text-white text-justify">{{ $route.params.deskripsi }}</p>
           </div>
 
           <!-- Bagian Right Side Gan ------------------------------------------------------------------------------------------------------------------------------------------------>

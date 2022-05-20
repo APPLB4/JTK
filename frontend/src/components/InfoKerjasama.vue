@@ -165,19 +165,26 @@
 
           <div class="lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ...">
             <h1 class="text-white font-semibold text-5xl mt-4 mb-24">
-              Info Kerjasama
+              Mitra Kerja Sama
             </h1>
-            <p class="text-white">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+            <img
+              style="max-width: 60%; height: auto"
+              class="object-center mx-auto mb-10"
+              src="/img/kerja-sama.jpg"
+              alt=""
+            />
+            <p class="text-white text-justify">
+              Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung
+              telah menjalin kerja sama dengan berbagai mitra, baik dari dalam
+              negeri maupun luar negeri. Para mitra yang telah menjalin kerja
+              sama dan hubungan baik dengan JTK Polban tersebut di antaranya
+              dari kalangan pemerintah, perguruan tinggi, industri, perusahaan
+              swasta, dan asosiasi atau yayasan. Selain kerja sama kemitraan,
+              JTK Polban juga menjalin kerja sama di bidang pendidikan,
+              penelitian, dan pengabdian kepada masyarakat bagi civitas
+              akademika JTK Polban yang diimplementasikan melalui program riset
+              kolaborasi (joint research program), pertukaran mahasiswa (student
+              exchange program), dan program magang (internship program).
             </p>
           </div>
         </div>

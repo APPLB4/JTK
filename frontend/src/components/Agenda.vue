@@ -23,7 +23,14 @@
     <section class="text-gray-600 body-font">
       <div class="container px-5 pt-10 mx-auto mb-10">
         <div>
-          <h1 class="text-white mb-10 text-3xl">Agenda</h1>
+          <h1 class="text-white mb-1 text-3xl">Agenda</h1>
+        </div>
+        <div>
+          <a href="#">
+            <h1 class="mb-10 text-xl text-right" style="color: #8d5cf6">
+              Kalender Akademik
+            </h1>
+          </a>
         </div>
 
         <div class="flex flex-wrap -m-4">

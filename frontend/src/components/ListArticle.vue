@@ -33,7 +33,7 @@
                 name: 'ArticleRead',
                 params: {
                   id: index,
-                  judul: 'article',
+                  judul: 'Article',
                   image: article[index].article_medias[0].media.url,
                   deskripsi: tag.deskripsi,
                 },
