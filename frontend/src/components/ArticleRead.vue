@@ -1,5 +1,6 @@
 <template>
 <div class="bg-JTK ">
+   <Navbar/>
 
 <div class="w-full pt-10 mb-10">
   <img class=" w-full h-96" src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="blog">
@@ -19,8 +20,10 @@
                               
                                 <div class="  lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ... ">
                                   
-                                    <h1 class=" text-white font-semibold text-5xl mt-4 mb-24">Article</h1>
-                                    <p class=" text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <h1 class=" text-white font-semibold text-5xl mt-4 mb-24"> {{$route.params.judul}}</h1>
+                                    <img class="mx-auto mb-10"  v-bind:src="$route.params.image">
+                                    
+                                    <p class=" text-white"> {{$route.params.deskripsi}}</p>
                                 </div>
 
                   
@@ -92,13 +95,14 @@
 <script lang="ts">
 import Vue from "vue";
 import Footer from "./Footer.vue"
+import Navbar from "./Navbar.vue"
 import axios from 'axios';
 
 
 
 export default Vue.extend({
     name: "ArticleRead",
-    components:{Footer},
+    components:{Navbar ,Footer},
 
   data() {
     return {
