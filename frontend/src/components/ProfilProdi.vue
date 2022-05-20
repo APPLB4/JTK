@@ -51,12 +51,26 @@
               </div>
 
               <div class="col-start-3 col-end-9 border-4">
-                <h1 class="text-white p-4 text-4xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam, dolores? Deleniti omnis repellendus, placeat eius
-                  officia similique dolores adipisci, eos reiciendis delectus
-                  esse mollitia modi reprehenderit quos odio minima eligendi?
+                <h1 class="text-white p-4 text-xl text-justify font-bold">
+                  Visi
                 </h1>
+                <p class="text-white p-4 text-xl text-justify">
+                  Menjadi Program Studi unggulan dan terdepan dalam program
+                  pendidikan Diploma III Teknik Informatika yang diakui baik di
+                  tingkat nasional maupun internasional pada tahun 2025.
+                </p>
+                <h1 class="text-white p-4 text-xl text-justify font-bold">
+                  Misi
+                </h1>
+                <p class="text-white p-4 text-xl text-justify">
+                  Misi Menyelenggarakan program pendidikan Diploma III Teknik
+                  Informatika yang diakui baik di tingkat nasional maupun
+                  internasional. Melakukan penelitian terapan yang dapat
+                  digunakan oleh Industri, Institusi atau Masyarakat baik
+                  ditingkat nasional maupun internasional Melaksanakan
+                  pengabdian kepada masyarakat pada lingkup lokal, regional dan
+                  nasional.
+                </p>
               </div>
             </div>
           </div>

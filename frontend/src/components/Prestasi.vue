@@ -1,26 +1,26 @@
 <template>
   <div class="bg-JTK">
     <Navbar />
-    <div class="mx-24">
+    <div class="mx-24 mt-10 mb-10">
       <div>
         <h1 class="text-white text-4xl mb-4">Prestasi Mahasiswa</h1>
       </div>
 
       <div class="flex flex-row">
-        <button class="bg-second px-8 mr-4">
-          <p class="text-white text-center">Internasional</p>
+        <button class="bg-second px-8 mr-4 b-height">
+          <p class="text-white text-center mb-0">Internasional</p>
         </button>
         <button class="bg-second px-8 mr-4">
-          <p class="text-white text-center">Regional</p>
+          <p class="text-white text-center mb-0">Regional</p>
         </button>
         <button class="bg-second px-8 mr-4">
-          <p class="text-white text-center">Nasional</p>
+          <p class="text-white text-center mb-0">Nasional</p>
         </button>
         <button class="bg-second px-8 mr-4">
-          <p class="text-white text-center">Prestasi</p>
+          <p class="text-white text-center mb-0">Prestasi</p>
         </button>
         <button class="bg-second px-8 mr-4">
-          <p class="text-white text-center">Lain lain</p>
+          <p class="text-white text-center mb-0">Lain lain</p>
         </button>
       </div>
 
@@ -47,6 +47,12 @@
     <Footer />
   </div>
 </template>
+
+<style scoped>
+.b-height {
+  height: 40px;
+}
+</style>
 
 <script lang="ts">
 import Vue from "vue";
