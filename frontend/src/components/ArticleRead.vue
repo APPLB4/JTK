@@ -33,47 +33,21 @@
                                             <section class="mb-4">
                                               <div class="border-l-2  pl-4">
                                                 <h1 class=" text-white flex flex-wrap font-semibold text-2xl pt-5 mb-10 " >Artikel Lainnya</h1>
-                                                  
-                                                  <div class="flex mb-10 bg-white">
-                                                           <img class=" mr-4 min-h-0 min-w-0 float-left rounded-md" src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="blog">
-                                                          <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                                                          <div>
-                                                              <h2 class="   text-indigo-900 tracking-widest text-md title-font font-medium text-gray-400 mb-1">Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih Jasa Tour Travel untuk Liburan Keluarga</h2>
-                                                          </div>
-                                                    </div>
 
-                                                    <div class="flex mb-10 bg-white">
-                                                          <img class=" mr-4 min-h-0 min-w-0 float-left rounded-md" src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="blog">
-                                                          <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                                                          <div>
-                                                              <h2 class="   text-indigo-900 tracking-widest text-md title-font font-medium text-gray-400 mb-1">Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih Jasa Tour Travel untuk Liburan Keluarga</h2>
-                                                          </div>
-                                                    </div>
-
-                                                    <div class="flex mb-10 bg-white">
-                                                           <img class=" mr-4 min-h-0 min-w-0 float-left rounded-md" src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="blog">
-                                                          <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                                                          <div>
-                                                              <h2 class="   text-indigo-900 tracking-widest text-md title-font font-medium text-gray-400 mb-1">Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih Jasa Tour Travel untuk Liburan Keluarga</h2>
-                                                          </div>
-                                                    </div>
+                                                <div
+                                                 v-for="(tag,index) in article.slice(0,4)"
+                                                :key="tag">
 
                                                      <div class="flex mb-10 bg-white">
-                                                            <img class=" mr-4 min-h-0 min-w-0 float-left rounded-md" src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="blog">
-                                                          <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
+                                                           <img class=" mr-4 min-h-0 min-w-0 float-left  w-full" v-bind:src="article[index].article_medias[0].media.url">
+                                        
                                                           <div>
-                                                              <h2 class="   text-indigo-900 tracking-widest text-md title-font font-medium text-gray-400 mb-1">Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih Jasa Tour Travel untuk Liburan Keluarga</h2>
+                                                              <h2 class="   text-indigo-900 tracking-widest text-md title-font font-medium text-gray-400 mb-1">{{tag.judul}}</h2>
                                                           </div>
                                                     </div>
 
-                                                    <div class="flex mb-10 bg-white">
-                                                           <img class=" mr-4 min-h-0 min-w-0 float-left rounded-md" src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="blog">
-                                                          <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                                                          <div>
-                                                              <h2 class="   text-indigo-900 tracking-widest text-md title-font font-medium text-gray-400 mb-1">Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih Jasa Tour Travel untuk Liburan Keluarga</h2>
-                                                          </div>
-                                                    </div>
-
+                                                </div>
+                                                  
 
                                               </div>
                                             </section>
@@ -117,7 +91,7 @@ export default Vue.extend({
   },
   mounted(){
         axios
-            .get('languages?_locale=en')
+            .get('Articles')
             .then(response => {
                 this.article = response.data
                 // console.log(response.data)
