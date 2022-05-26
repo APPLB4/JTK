@@ -42,7 +42,7 @@ const routes = [
     component: ArticleRead
   },
   {
-    path: '/InfoKerjasama',
+    path: '/InfoKerjasama/:id?',
     name: 'InfoKerjasama',
     component: InfoKerjasama
   },

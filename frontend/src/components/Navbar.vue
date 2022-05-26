@@ -82,11 +82,23 @@
             <div class="text-white">Agenda</div>
           </a>
           <a
-            href="/InfoKerjasama"
+          
             class="dropdown navlist relative inline-block flex items-center justify-center block py-3 px-1 text-white font-lato font-semibold rounded mx-1"
             style="white-space: nowrap"
           >
+          <router-link
+                    :to="{
+                      name: 'InfoKerjasama',
+                      params: {
+                        id: 1,
+                        judul: article[0].judul,
+                        image: article[0].media[0].url,
+                        deskripsi: article[0].deskripsi,
+                      },
+                    }"
+                  >
             <div class="text-white">Kerja Sama</div>
+          </router-link>
           </a>
           <a
             href="/TujuanKontak"
@@ -218,6 +230,7 @@ export default Vue.extend({
       isOpen: false,
       state: "close",
       scrollPosition: 0,
+      article: [],
     };
   },
   created() {
@@ -230,6 +243,15 @@ export default Vue.extend({
       this.navbarList = navbarList.data;
       this.logoHeader = logoHeader.data;
     },
+  },
+   mounted() {
+    axios
+      .get("kerjasamas")
+      .then((response) => {
+        this.article = response.data;
+        // console.log(response.data)
+      })
+      .catch((error) => console.log(error));
   },
 });
 </script>
