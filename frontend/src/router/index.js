@@ -10,6 +10,7 @@ import Agenda from '../views/AgendaView.vue'
 import TujuanKontak from '../views/TujuanKontakView.vue'
 import Prestasi from '../views/PrestasiView.vue'
 import ProfilPegawai from '../views/ProfilPegawaiView.vue'
+import Fasilitas from '../views/FasilitasView.vue';
 
 Vue.use(VueRouter)
 
@@ -63,6 +64,11 @@ const routes = [
     path: '/ProfilPegawai',
     name: 'ProfilPegawai',
     component: ProfilPegawai
+  },
+  {
+    path: '/Fasilitas',
+    name: 'Fasilitas',
+    component: Fasilitas
   }
 ]
 
