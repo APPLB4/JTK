@@ -14,7 +14,7 @@
 </style>
 
 
-<script lang="ts">
+<script lang="ts" src="./TW-ELEMENTS-PATH/dist/js/index.min.js">
 import Vue from "vue";
 import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";

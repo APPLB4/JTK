@@ -4,6 +4,7 @@ import router from './router'
 import vuetify from './plugins/vuetify'
 import '@/index.css'
 import axios from 'axios'
+import 'tw-elements'
 
 axios.defaults.baseURL = 'http://localhost:1337/';
 

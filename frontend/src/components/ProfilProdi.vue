@@ -23,26 +23,24 @@
             <div class="grid grid-cols-8">
               <div class="col-start-3 col-end-9 ml-4">
                 <div class="flex flex-row">
-                  <button class="bg-second p-2 px-4 mr-4">
+                  <button class="bg-second p-2 px-4 mr-4"  @click="deskripsi = 'visimisi'">
                     <p class="text-white text-center">Visi misi</p>
                   </button>
-                  <button class="bg-second p-2 px-4 mr-4">
+                  <button class="bg-second p-2 px-4 mr-4" @click="deskripsi = 'profillulusan'">
                     <p class="text-white text-center">Profil Jurusan</p>
                   </button>
-                  <button class="bg-second p-2 px-4">
-                    <p class="text-white text-center">Keungggulan</p>
-                  </button>
+
                 </div>
               </div>
 
               <div class="col-start-1 col-end-3 mt-4">
                 <div class="">
-                  <button class="bg-second p-2 mr-4 w-full mb-4">
+                  <button class="bg-second p-2 mr-4 w-full mb-4"  @click="prodi = article[0].namaprodi">
                     <p class="text-white text-center">
                       D3 - Teknik Informatika
                     </p>
                   </button>
-                  <button class="bg-second p-2 mr-4 w-full mb-4">
+                  <button class="bg-second p-2 mr-4 w-full mb-4" @click="prodi = article[1].namaprodi">
                     <p class="text-white text-center">
                       D4 - Teknik Informatika
                     </p>
@@ -51,26 +49,39 @@
               </div>
 
               <div class="col-start-3 col-end-9 border-4">
-                <h1 class="text-white p-4 text-xl text-justify font-bold">
-                  Visi
-                </h1>
-                <p class="text-white p-4 text-xl text-justify">
-                  Menjadi Program Studi unggulan dan terdepan dalam program
-                  pendidikan Diploma III Teknik Informatika yang diakui baik di
-                  tingkat nasional maupun internasional pada tahun 2025.
-                </p>
-                <h1 class="text-white p-4 text-xl text-justify font-bold">
-                  Misi
-                </h1>
-                <p class="text-white p-4 text-xl text-justify">
-                  Misi Menyelenggarakan program pendidikan Diploma III Teknik
-                  Informatika yang diakui baik di tingkat nasional maupun
-                  internasional. Melakukan penelitian terapan yang dapat
-                  digunakan oleh Industri, Institusi atau Masyarakat baik
-                  ditingkat nasional maupun internasional Melaksanakan
-                  pengabdian kepada masyarakat pada lingkup lokal, regional dan
-                  nasional.
-                </p>
+                <div
+                v-for="tag in article"
+                :key = "tag">
+
+                <div
+                v-show="prodi == tag.namaprodi">
+
+                <div
+                 v-show="deskripsi == 'visimisi'">
+                  <h1 class=" text-5xl mb-10 font-serif">
+                    {{tag.namaprodi}}
+                  </h1>
+                  <h1 class=" text-justify">
+                    {{tag.visimisi}}
+                  </h1>
+                </div>
+
+                <div
+                 v-show="deskripsi == 'profillulusan'">
+                   <h1 class=" text-5xl mb-10 font-serif">
+                    {{tag.namaprodi}}
+                  </h1>
+                  <h1 class=" text-justify">
+                    {{tag.profillulusan}}
+                  </h1>
+                </div>
+
+         
+
+                </div>
+
+                </div>
+               
               </div>
             </div>
           </div>
@@ -92,129 +103,41 @@
                   Artikel Lainnya
                 </h1>
 
-                <div class="flex mb-10 bg-white">
-                  <img
-                    class="mr-4 min-h-0 min-w-0 float-left rounded-md"
-                    src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="blog"
-                  />
-                  <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                  <div>
-                    <h2
-                      class="
-                        text-indigo-900
-                        tracking-widest
-                        text-md
-                        title-font
-                        font-medium
-                        text-gray-400
-                        mb-1
-                      "
-                    >
-                      Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih
-                      Jasa Tour Travel untuk Liburan Keluarga
-                    </h2>
-                  </div>
-                </div>
+                <div v-for="(tag, index) in articlee.slice(0, 4)" :key="tag">
+                  <router-link
+                    :to="{
+                      name: 'ArticleRead',
+                      params: {
+                        id: index,
+                        judul: 'article',
+                        image: articlee[index].article_medias[0].media.url,
+                        deskripsi: tag.deskripsi,
+                      },
+                    }"
+                  >
+                    <div class="flex mb-10 bg-white">
+                      <img
+                        class="mr-4 min-h-0 min-w-0 float-left w-full"
+                        v-bind:src="articlee[index].article_medias[0].media.url"
+                      />
 
-                <div class="flex mb-10 bg-white">
-                  <img
-                    class="mr-4 min-h-0 min-w-0 float-left rounded-md"
-                    src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="blog"
-                  />
-                  <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                  <div>
-                    <h2
-                      class="
-                        text-indigo-900
-                        tracking-widest
-                        text-md
-                        title-font
-                        font-medium
-                        text-gray-400
-                        mb-1
-                      "
-                    >
-                      Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih
-                      Jasa Tour Travel untuk Liburan Keluarga
-                    </h2>
-                  </div>
-                </div>
-
-                <div class="flex mb-10 bg-white">
-                  <img
-                    class="mr-4 min-h-0 min-w-0 float-left rounded-md"
-                    src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="blog"
-                  />
-                  <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                  <div>
-                    <h2
-                      class="
-                        text-indigo-900
-                        tracking-widest
-                        text-md
-                        title-font
-                        font-medium
-                        text-gray-400
-                        mb-1
-                      "
-                    >
-                      Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih
-                      Jasa Tour Travel untuk Liburan Keluarga
-                    </h2>
-                  </div>
-                </div>
-
-                <div class="flex mb-10 bg-white">
-                  <img
-                    class="mr-4 min-h-0 min-w-0 float-left rounded-md"
-                    src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="blog"
-                  />
-                  <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                  <div>
-                    <h2
-                      class="
-                        text-indigo-900
-                        tracking-widest
-                        text-md
-                        title-font
-                        font-medium
-                        text-gray-400
-                        mb-1
-                      "
-                    >
-                      Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih
-                      Jasa Tour Travel untuk Liburan Keluarga
-                    </h2>
-                  </div>
-                </div>
-
-                <div class="flex mb-10 bg-white">
-                  <img
-                    class="mr-4 min-h-0 min-w-0 float-left rounded-md"
-                    src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="blog"
-                  />
-                  <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                  <div>
-                    <h2
-                      class="
-                        text-indigo-900
-                        tracking-widest
-                        text-md
-                        title-font
-                        font-medium
-                        text-gray-400
-                        mb-1
-                      "
-                    >
-                      Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih
-                      Jasa Tour Travel untuk Liburan Keluarga
-                    </h2>
-                  </div>
+                      <div>
+                        <h2
+                          class="
+                            text-indigo-900
+                            tracking-widest
+                            text-md
+                            title-font
+                            font-medium
+                            text-gray-400
+                            mb-1
+                          "
+                        >
+                          {{ tag.judul }}
+                        </h2>
+                      </div>
+                    </div>
+                  </router-link>
                 </div>
               </div>
             </section>
@@ -239,23 +162,36 @@ export default Vue.extend({
   data() {
     return {
       article: [],
-      function() {
-        const lang = localStorage.getItem("lang") || "en";
-        return {
-          lang: lang,
-        };
-      },
+      articlee:[],
+      prodi : [],
+      deskripsi : {},
+      
     };
   },
   mounted() {
     axios
-      .get("languages?_locale=en")
+      .get("prodis")
       .then((response) => {
         this.article = response.data;
         // console.log(response.data)
       })
       .catch((error) => console.log(error));
+       axios
+      .get("articles")
+      .then((response) => {
+        this.articlee = response.data;
+        // console.log(response.data)
+      })
+      .catch((error) => console.log(error));
   },
-  methods: {},
+  methods: {
+    changeprodi(){
+
+    },
+    changedeskripsi(){
+      
+    }
+
+  },
 });
 </script>
