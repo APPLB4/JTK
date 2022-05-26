@@ -11,6 +11,8 @@ import TujuanKontak from '../views/TujuanKontakView.vue'
 import Prestasi from '../views/PrestasiView.vue'
 import ProfilPegawai from '../views/ProfilPegawaiView.vue'
 import Fasilitas from '../views/FasilitasView.vue';
+import Gallery from '../views/GalleryView.vue'
+import Kurikulum from '../views/KurikulumView.vue'
 
 Vue.use(VueRouter)
 
@@ -41,7 +43,7 @@ const routes = [
     component: ArticleRead
   },
   {
-    path: '/InfoKerjasama',
+    path: '/InfoKerjasama/:id?',
     name: 'InfoKerjasama',
     component: InfoKerjasama
   },
@@ -61,6 +63,11 @@ const routes = [
     component: Prestasi
   },
   {
+    path: '/Kurikulum',
+    name: 'Kurikulum',
+    component: Kurikulum
+  },
+  {
     path: '/ProfilPegawai',
     name: 'ProfilPegawai',
     component: ProfilPegawai
@@ -69,6 +76,11 @@ const routes = [
     path: '/Fasilitas',
     name: 'Fasilitas',
     component: Fasilitas
+  },
+  {
+    path: '/Gallery',
+    name: 'Gallery',
+    component: Gallery
   }
 ]
 
