@@ -11,6 +11,7 @@ import TujuanKontak from '../views/TujuanKontakView.vue'
 import Prestasi from '../views/PrestasiView.vue'
 import ProfilPegawai from '../views/ProfilPegawaiView.vue'
 import Gallery from '../views/GalleryView.vue'
+import Kurikulum from '../views/KurikulumView.vue'
 
 Vue.use(VueRouter)
 
@@ -59,6 +60,11 @@ const routes = [
     path: '/Prestasi',
     name: 'Prestasi',
     component: Prestasi
+  },
+  {
+    path: '/Kurikulum',
+    name: 'Kurikulum',
+    component: Kurikulum
   },
   {
     path: '/ProfilPegawai',

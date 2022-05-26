@@ -14,12 +14,7 @@
           <button
             @click="isOpen = !isOpen"
             type="button"
-            class="
-              block
-              text-gray-500
-              hover:text-white
-              focus:text-white focus:outline-none
-            "
+            class="block text-gray-500 hover:text-white focus:text-white focus:outline-none"
           >
             <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
               <path
@@ -42,65 +37,23 @@
         >
           <a
             href="/"
-            class="
-              dropdown
-              navlist
-              relative
-              inline-block
-              block
-              flex
-              items-center
-              justify-center
-              p-3
-              text-white
-              font-lato font-semibold
-              rounded
-              mx-3
-            "
+            class="dropdown navlist relative inline-block block flex items-center justify-center p-3 text-white font-lato font-semibold rounded mx-3"
           >
             <div class="text-white">Home</div>
           </a>
           <a
-            href="/"
-            class="
-              dropdown
-              navlist
-              relative
-              inline-block
-              block
-              flex
-              items-center
-              justify-center
-              p-3
-              text-white
-              font-lato font-semibold
-              rounded
-              mx-3
-            "
+            href="/Gallery"
+            class="dropdown navlist relative inline-block block flex items-center justify-center p-3 text-white font-lato font-semibold rounded mx-3"
           >
             <div class="text-white">Gallery</div>
           </a>
           <a
             href="/"
-            class="
-              dropdown
-              navlist
-              relative
-              inline-block
-              block
-              flex
-              items-center
-              justify-center
-              p-3
-              text-white
-              font-lato font-semibold
-              rounded
-              mx-3
-            "
+            class="dropdown navlist relative inline-block block flex items-center justify-center p-3 text-white font-lato font-semibold rounded mx-3"
           >
             <div class="text-white">Profil</div>
             <div class="dropdown-content absolute hidden">
-              <a href="/">Pegawai</a>
+              <a href="/ProfilPegawai">Pegawai</a>
               <a href="/ProfilProdi">Prodi</a>
               <a href="/ProfilJurusan">Jurusan</a>
               <a href="/">Tracer Studi</a>
@@ -108,108 +61,36 @@
           </a>
           <a
             href="/"
-            class="
-              dropdown
-              navlist
-              relative
-              inline-block
-              block
-              flex
-              items-center
-              justify-center
-              p-3
-              text-white
-              font-lato font-semibold
-              rounded
-              mx-3
-            "
+            class="dropdown navlist relative inline-block block flex items-center justify-center p-3 text-white font-lato font-semibold rounded mx-3"
           >
             <div class="text-white">Akademik</div>
             <div class="dropdown-content absolute hidden">
-              <a href="/">Kurikulum</a>
+              <a href="/Kurikulum">Kurikulum</a>
               <a href="/Prestasi">Prestasi</a>
             </div>
           </a>
           <a
             href="/"
-            class="
-              dropdown
-              navlist
-              relative
-              inline-block
-              block
-              p-3
-              flex
-              items-center
-              justify-center
-              text-white
-              font-lato font-semibold
-              rounded
-              mx-3
-            "
+            class="dropdown navlist relative inline-block block p-3 flex items-center justify-center text-white font-lato font-semibold rounded mx-3"
           >
             <div class="text-white">Fasilitas</div>
           </a>
           <a
             href="/Agenda"
-            class="
-              dropdown
-              navlist
-              relative
-              inline-block
-              block
-              flex
-              items-center
-              justify-center
-              p-3
-              text-white
-              font-lato font-semibold
-              rounded
-              mx-3
-            "
+            class="dropdown navlist relative inline-block block flex items-center justify-center p-3 text-white font-lato font-semibold rounded mx-3"
           >
             <div class="text-white">Agenda</div>
           </a>
           <a
             href="/InfoKerjasama"
-            class="
-              dropdown
-              navlist
-              relative
-              inline-block
-              flex
-              items-center
-              justify-center
-              block
-              py-3
-              px-1
-              text-white
-              font-lato font-semibold
-              rounded
-              mx-1
-            "
+            class="dropdown navlist relative inline-block flex items-center justify-center block py-3 px-1 text-white font-lato font-semibold rounded mx-1"
             style="white-space: nowrap"
           >
             <div class="text-white">Kerja Sama</div>
           </a>
           <a
             href="/TujuanKontak"
-            class="
-              dropdown
-              navlist
-              relative
-              inline-block
-              block
-              flex
-              items-center
-              justify-center
-              p-3
-              text-white
-              font-lato font-semibold
-              rounded
-              ml-3
-              mr-8
-            "
+            class="dropdown navlist relative inline-block block flex items-center justify-center p-3 text-white font-lato font-semibold rounded ml-3 mr-8"
           >
             <div class="text-white">Kontak</div>
           </a>
@@ -219,18 +100,7 @@
                 <input
                   id="search-card"
                   style="width: 220px"
-                  class="
-                    w-full
-                    font-lato font-normal
-                    text-l
-                    ml-3
-                    mt-2
-                    outline-none
-                    color-white
-                    flex
-                    justify-center
-                    items-center
-                  "
+                  class="w-full font-lato font-normal text-l ml-3 mt-2 outline-none color-white flex justify-center items-center"
                   type="text"
                 />
               </div>
@@ -238,13 +108,7 @@
             <div class="flex justify-center items-center mt5">
               <button
                 @click="getSearchValue"
-                class="
-                  email-subscribe-btn
-                  text-white
-                  font-lato font-normal
-                  text-base
-                  mt4
-                "
+                class="email-subscribe-btn text-white font-lato font-normal text-base mt4"
               >
                 Search
               </button>
