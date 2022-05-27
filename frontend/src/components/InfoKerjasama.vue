@@ -16,20 +16,12 @@
       <!-- Body Gan -->
       <div>
         <div class="flex flex-wrap">
-
-         <!-- Bagian Right Side Gan ------------------------------------------------------------------------------------------------------------------------------------------------>
+          <!-- Bagian Right Side Gan ------------------------------------------------------------------------------------------------------------------------------------------------>
           <div class="lg:w-1/4 pr-4 sm:w-full ...">
             <section class="mb-4">
               <div class="border-r-2 pr-4">
                 <h1
-                  class="
-                    text-white
-                    flex flex-wrap
-                    font-semibold
-                    text-2xl
-                    pt-5
-                    mb-10
-                  "
+                  class="text-white flex flex-wrap font-semibold text-2xl pt-5 mb-10"
                 >
                   Artikel Lainnya
                 </h1>
@@ -54,15 +46,7 @@
 
                       <div>
                         <h2
-                          class="
-                            text-indigo-900
-                            tracking-widest
-                            text-md
-                            title-font
-                            font-medium
-                            text-gray-400
-                            mb-1
-                          "
+                          class="text-indigo-900 tracking-widest text-md title-font font-medium text-gray-400 mb-1"
                         >
                           {{ tag.judul }}
                         </h2>
@@ -78,8 +62,7 @@
 
           <div class="lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ...">
             <h1 class="text-white font-semibold text-5xl mt-4 mb-24">
-                {{ $route.params.judul }}
-               Mitra Kerja Sama 
+              {{ $route.params.judul }}
             </h1>
             <img
               style="max-width: 60%; height: auto"
@@ -88,7 +71,7 @@
               alt=""
             />
             <p class="text-white text-justify">
-               {{ $route.params.deskripsi }}
+              {{ $route.params.deskripsi }}
               Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung
               telah menjalin kerja sama dengan berbagai mitra, baik dari dalam
               negeri maupun luar negeri. Para mitra yang telah menjalin kerja
