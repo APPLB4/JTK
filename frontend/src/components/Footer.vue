@@ -13,16 +13,19 @@
               md:justify-start
             "
           >
-            Company Info
+            Profil
           </h6>
           <p class="mb-4">
-            <a href="#!" class="text-gray-600">Pegawai</a>
+            <a href="/ProfilPegawai" class="text-gray-600">Pegawai</a>
           </p>
           <p class="mb-4">
-            <a href="#!" class="text-gray-600">Prodi</a>
+            <a href="/ProfilPegawai" class="text-gray-600">Prodi</a>
           </p>
           <p class="mb-4">
-            <a href="#!" class="text-gray-600">Jurusan</a>
+            <a href="/ProfilJurusan" class="text-gray-600">Jurusan</a>
+          </p>
+          <p class="mb-4">
+            <a href="/" class="text-gray-600">Tracer Studi</a>
           </p>
         </div>
 
@@ -40,10 +43,10 @@
             Akademik
           </h6>
           <p class="mb-4">
-            <a href="#!" class="text-gray-600">Kurikulum</a>
+            <a href="/Kurikulum" class="text-gray-600">Kurikulum</a>
           </p>
           <p class="mb-4">
-            <a href="#!" class="text-gray-600">Prestasi</a>
+            <a href="/Prestasi" class="text-gray-600">Prestasi</a>
           </p>
         </div>
 
@@ -58,16 +61,13 @@
               md:justify-start
             "
           >
-            Features
+            Media Informasi
           </h6>
           <p class="mb-4">
-            <a href="#!" class="text-gray-600">Gallery</a>
+            <a href="/Gallery" class="text-gray-600">Gallery</a>
           </p>
           <p class="mb-4">
-            <a href="#!" class="text-gray-600">Fasilitas</a>
-          </p>
-          <p class="mb-4">
-            <a href="#!" class="text-gray-600">Agenda</a>
+            <a href="/Agenda" class="text-gray-600">Agenda</a>
           </p>
         </div>
 
@@ -82,14 +82,15 @@
               md:justify-start
             "
           >
-            Resources
+            Info Lainnya
           </h6>
           <p class="mb-4">
-            <a href="#!" class="text-gray-600">Kerja Sama</a>
+            <a href="/InfoKerjasama/1" class="text-gray-600">Kerja Sama</a>
           </p>
           <p class="mb-4">
-            <a href="#!" class="text-gray-600">Tracer Studi</a>
+            <a href="/Fasilitas" class="text-gray-600">Fasilitas</a>
           </p>
+
         </div>
 
         <div class="">
@@ -103,7 +104,7 @@
               md:justify-start
             "
           >
-            Contact
+            Kontak
           </h6>
           <p class="flex items-center justify-center md:justify-start mb-4">
             <svg
