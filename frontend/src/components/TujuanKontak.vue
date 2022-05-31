@@ -26,26 +26,7 @@
             <div class="ml-12 mb-10">
               <div class="form-check mb-2">
                 <input
-                  class="
-                    p-4
-                    form-check-input
-                    appearance-none
-                    rounded-full
-                    h-4
-                    w-4
-                    border border-gray-300
-                    bg-white
-                    checked:bg-red-600 checked:border-blue-600
-                    focus:outline-none
-                    transition
-                    duration-200
-                    mt-1
-                    align-top
-                    bg-no-repeat bg-center bg-contain
-                    float-left
-                    mr-2
-                    cursor-pointer
-                  "
+                  class="p-4 form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-red-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault1"
@@ -62,26 +43,7 @@
               </div>
               <div class="form-check mb-2">
                 <input
-                  class="
-                    p-4
-                    form-check-input
-                    appearance-none
-                    rounded-full
-                    h-4
-                    w-4
-                    border border-gray-300
-                    bg-white
-                    checked:bg-red-600 checked:border-blue-600
-                    focus:outline-none
-                    transition
-                    duration-200
-                    mt-1
-                    align-top
-                    bg-no-repeat bg-center bg-contain
-                    float-left
-                    mr-2
-                    cursor-pointer
-                  "
+                  class="p-4 form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-red-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault1"
@@ -99,26 +61,7 @@
               </div>
               <div class="form-check mb-2">
                 <input
-                  class="
-                    p-4
-                    form-check-input
-                    appearance-none
-                    rounded-full
-                    h-4
-                    w-4
-                    border border-gray-300
-                    bg-white
-                    checked:bg-red-600 checked:border-blue-600
-                    focus:outline-none
-                    transition
-                    duration-200
-                    mt-1
-                    align-top
-                    bg-no-repeat bg-center bg-contain
-                    float-left
-                    mr-2
-                    cursor-pointer
-                  "
+                  class="p-4 form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-red-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault1"
@@ -136,126 +79,45 @@
             <div class="mb-6">
               <label
                 for="large-input"
-                class="
-                  block
-                  mb-2
-                  text-sm
-                  font-medium
-                  text-white
-                  dark:text-gray-300
-                  text-3xl
-                "
+                class="block mb-2 text-sm font-medium text-white dark:text-gray-300 text-3xl"
                 >Nama
               </label>
               <input
                 type="text"
                 id="large-input"
-                class="
-                  block
-                  w-3/4
-                  p-4
-                  text-gray-900
-                  border border-gray-300
-                  rounded-lg
-                  bg-gray-50
-                  sm:text-md
-                  focus:ring-blue-500 focus:border-blue-500
-                  dark:bg-gray-700
-                  dark:border-gray-600
-                  dark:placeholder-gray-400
-                  dark:text-white
-                  dark:focus:ring-blue-500
-                  dark:focus:border-blue-500
-                "
+                class="block w-3/4 p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               />
             </div>
 
             <div class="mb-6">
               <label
                 for="large-input"
-                class="
-                  block
-                  mb-2
-                  text-sm
-                  font-medium
-                  text-white
-                  dark:text-gray-300
-                  text-3xl
-                "
+                class="block mb-2 text-sm font-medium text-white dark:text-gray-300 text-3xl"
                 >Email
               </label>
               <input
                 type="text"
                 id="large-input"
-                class="
-                  block
-                  w-3/4
-                  p-4
-                  text-gray-900
-                  border border-gray-300
-                  rounded-lg
-                  bg-gray-50
-                  sm:text-md
-                  focus:ring-blue-500 focus:border-blue-500
-                  dark:bg-gray-700
-                  dark:border-gray-600
-                  dark:placeholder-gray-400
-                  dark:text-white
-                  dark:focus:ring-blue-500
-                  dark:focus:border-blue-500
-                "
+                class="block w-3/4 p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               />
             </div>
 
             <div class="mb-6">
               <label
                 for="large-input"
-                class="
-                  block
-                  mb-2
-                  text-sm
-                  font-medium
-                  text-white
-                  dark:text-gray-300
-                  text-3xl
-                "
+                class="block mb-2 text-sm font-medium text-white dark:text-gray-300 text-3xl"
                 >Pesan
               </label>
-              <input
+              <textarea
                 type="text"
                 id="large-input"
-                class="
-                  block
-                  w-full
-                  h-96
-                  p-4
-                  text-gray-900
-                  border border-gray-300
-                  rounded-lg
-                  bg-gray-50
-                  sm:text-md
-                  focus:ring-blue-500 focus:border-blue-500
-                  dark:bg-gray-700
-                  dark:border-gray-600
-                  dark:placeholder-gray-400
-                  dark:text-white
-                  dark:focus:ring-blue-500
-                  dark:focus:border-blue-500
-                "
+                class="block w-full h-96 p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               />
             </div>
 
             <div class="text-center">
               <button
-                class="
-                  text-black
-                  p-4
-                  outline-white
-                  rounded-xl
-                  mb-10
-                  bg-white
-                  hover:bg-gray-500
-                "
+                class="text-black p-2 outline-white rounded-lg mb-10 bg-white hover:bg-gray-500"
               >
                 Kirim Pesan
               </button>
@@ -267,27 +129,13 @@
             <section class="mb-4">
               <div class="border-l-2 pl-4">
                 <h1
-                  class="
-                    text-white
-                    flex flex-wrap
-                    font-semibold
-                    text-2xl
-                    pt-5
-                    mb-10
-                  "
+                  class="text-white flex flex-wrap font-semibold text-2xl pt-5 mb-10"
                 >
                   Alamat
                 </h1>
 
                 <h1
-                  class="
-                    text-white
-                    flex flex-wrap
-                    font-semibold
-                    text-xl
-                    pt-5
-                    mb-10
-                  "
+                  class="text-white flex flex-wrap font-semibold text-xl pt-5 mb-10"
                 >
                   Jl. Gegerkalong Hilir, Ciwaruga, Kec. Parongpong, Kabupaten
                   Bandung Barat, Jawa Barat

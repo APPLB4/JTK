@@ -18,30 +18,41 @@
         <div class="flex flex-wrap">
           <!-- Bagian Left Side Gan -->
 
-          <div class="lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ...">
+          <div class="mb-10 text-white lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ...">
             <h1 class="text-white font-semibold text-5xl mt-4 mb-24">Prodi</h1>
             <div class="grid grid-cols-8">
               <div class="col-start-3 col-end-9 ml-4">
                 <div class="flex flex-row">
-                  <button class="bg-second p-2 px-4 mr-4"  @click="deskripsi = 'visimisi'">
-                    <p class="text-white text-center">Visi misi</p>
+                  <button
+                    class="bg-second p-2 px-4 mr-4"
+                    @click="deskripsi = 'visimisi'"
+                  >
+                    <p class="text-white text-center mb-0">Visi misi</p>
                   </button>
-                  <button class="bg-second p-2 px-4 mr-4" @click="deskripsi = 'profillulusan'">
-                    <p class="text-white text-center">Profil Jurusan</p>
+                  <button
+                    class="bg-second p-2 px-4 mr-4"
+                    @click="deskripsi = 'profillulusan'"
+                  >
+                    <p class="text-white text-center mb-0">Profil Jurusan</p>
                   </button>
-
                 </div>
               </div>
 
               <div class="col-start-1 col-end-3 mt-4">
                 <div class="">
-                  <button class="bg-second p-2 mr-4 w-full mb-4"  @click="prodi = article[0].namaprodi">
-                    <p class="text-white text-center">
+                  <button
+                    class="bg-second p-2 mr-4 w-full mb-4"
+                    @click="prodi = article[0].namaprodi"
+                  >
+                    <p class="text-white text-center mb-0">
                       D3 - Teknik Informatika
                     </p>
                   </button>
-                  <button class="bg-second p-2 mr-4 w-full mb-4" @click="prodi = article[1].namaprodi">
-                    <p class="text-white text-center">
+                  <button
+                    class="bg-second p-2 mr-4 w-full mb-4"
+                    @click="prodi = article[1].namaprodi"
+                  >
+                    <p class="text-white text-center mb-0">
                       D4 - Teknik Informatika
                     </p>
                   </button>
@@ -49,39 +60,27 @@
               </div>
 
               <div class="col-start-3 col-end-9 border-4">
-                <div
-                v-for="tag in article"
-                :key = "tag">
+                <div class="m-7" v-for="tag in article" :key="tag">
+                  <div v-show="prodi == tag.namaprodi">
+                    <div v-show="deskripsi == 'visimisi'">
+                      <h1 class="text-5xl mb-10 font-serif">
+                        {{ tag.namaprodi }}
+                      </h1>
+                      <h1 class="text-justify">
+                        {{ tag.visimisi }}
+                      </h1>
+                    </div>
 
-                <div
-                v-show="prodi == tag.namaprodi">
-
-                <div
-                 v-show="deskripsi == 'visimisi'">
-                  <h1 class=" text-5xl mb-10 font-serif">
-                    {{tag.namaprodi}}
-                  </h1>
-                  <h1 class=" text-justify">
-                    {{tag.visimisi}}
-                  </h1>
+                    <div v-show="deskripsi == 'profillulusan'">
+                      <h1 class="text-5xl mb-10 font-serif">
+                        {{ tag.namaprodi }}
+                      </h1>
+                      <h1 class="text-justify">
+                        {{ tag.profillulusan }}
+                      </h1>
+                    </div>
+                  </div>
                 </div>
-
-                <div
-                 v-show="deskripsi == 'profillulusan'">
-                   <h1 class=" text-5xl mb-10 font-serif">
-                    {{tag.namaprodi}}
-                  </h1>
-                  <h1 class=" text-justify">
-                    {{tag.profillulusan}}
-                  </h1>
-                </div>
-
-         
-
-                </div>
-
-                </div>
-               
               </div>
             </div>
           </div>
@@ -91,14 +90,7 @@
             <section class="mb-4">
               <div class="border-l-2 pl-4">
                 <h1
-                  class="
-                    text-white
-                    flex flex-wrap
-                    font-semibold
-                    text-2xl
-                    pt-5
-                    mb-10
-                  "
+                  class="text-white flex flex-wrap font-semibold text-2xl pt-5 mb-10"
                 >
                   Artikel Lainnya
                 </h1>
@@ -123,15 +115,7 @@
 
                       <div>
                         <h2
-                          class="
-                            text-indigo-900
-                            tracking-widest
-                            text-md
-                            title-font
-                            font-medium
-                            text-gray-400
-                            mb-1
-                          "
+                          class="text-indigo-900 tracking-widest text-md title-font font-medium text-gray-400 mb-1"
                         >
                           {{ tag.judul }}
                         </h2>
@@ -162,10 +146,9 @@ export default Vue.extend({
   data() {
     return {
       article: [],
-      articlee:[],
-      prodi : [],
-      deskripsi : {},
-      
+      articlee: [],
+      prodi: [],
+      deskripsi: {},
     };
   },
   mounted() {
@@ -176,7 +159,7 @@ export default Vue.extend({
         // console.log(response.data)
       })
       .catch((error) => console.log(error));
-       axios
+    axios
       .get("articles")
       .then((response) => {
         this.articlee = response.data;
@@ -185,13 +168,8 @@ export default Vue.extend({
       .catch((error) => console.log(error));
   },
   methods: {
-    changeprodi(){
-
-    },
-    changedeskripsi(){
-      
-    }
-
+    changeprodi() {},
+    changedeskripsi() {},
   },
 });
 </script>
