@@ -24,7 +24,7 @@
           }"
         >
           <div
-            class="mx-10 mt-10 p-1 group sm:flex space-x-3 bg-white shadow-xl hover:rounded-2xl text-cyan"
+            class="mx-10 mt-1 mb-10 p-1 group sm:flex space-x-3 bg-white shadow-xl hover:rounded-2xl text-cyan"
           >
             <img
               v-bind:src="tag.photo.url"
@@ -67,7 +67,7 @@
           }"
         >
           <div
-            class="mx-10 mt-10 p-1 group sm:flex space-x-3 bg-white shadow-xl hover:rounded-2xl text-cyan"
+            class="mx-10 mt-1 mb-10 p-1 group sm:flex space-x-3 bg-white shadow-xl hover:rounded-2xl text-cyan"
           >
             <img
               v-bind:src="tag.photo.url"
