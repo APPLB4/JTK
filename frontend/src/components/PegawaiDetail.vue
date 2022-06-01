@@ -12,7 +12,7 @@
 
           <div class="lg:w-1/4 sm:w-full sm:pr-0 ...">
             <img
-              src="/img/blankpicture.png"
+              v-bind:src="$route.params.photo.url"
               style="max-width: 60%; height: auto"
               class="object-center mx-auto mb-10"
               alt=""
