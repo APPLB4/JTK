@@ -20,16 +20,17 @@
 
           <div class="lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ...">
             <h1 class="text-white font-semibold text-4xl mt-4 mb-24">
-              JURUSAN TEKNIK KOMPUTER DAN INFORMATIKA
+              {{ jurusan[0].judul }}
             </h1>
             <img
-              src="/img/profil-jurusan.png"
+              v-bind:src="jurusan[0].media[0].url"
               style="max-width: 60%; height: auto"
               class="object-center mx-auto mb-10"
               alt=""
             />
             <p class="text-white text-justify">
-              &emsp;Jurusan Teknik Komputer dan Informatika Politeknik Negeri
+              {{ jurusan[0].deskripsi }}
+              <!-- &emsp;Jurusan Teknik Komputer dan Informatika Politeknik Negeri
               Bandung (lebih dikenal dengan singkatan JTK) merupakan jurusan
               penyelenggara pendidikan diploma bidang teknologi informasi
               pertama di Indonesia. Jurusan ini telah menyelenggarakan
@@ -62,6 +63,7 @@
               pemerintah dan masyarakat umum); Menjadi tempat bagi sivitas
               akademika untuk saling bertukar gagasan dalam lingkungan yang
               kondusif.
+            </p> -->
             </p>
           </div>
 
@@ -70,141 +72,38 @@
             <section class="mb-4">
               <div class="border-l-2 pl-4">
                 <h1
-                  class="
-                    text-white
-                    flex flex-wrap
-                    font-semibold
-                    text-2xl
-                    pt-5
-                    mb-10
-                  "
+                  class="text-white flex flex-wrap font-semibold text-2xl pt-5 mb-10"
                 >
                   Artikel Lainnya
                 </h1>
 
-                <div class="flex mb-10 bg-white">
-                  <img
-                    class="mr-4 min-h-0 min-w-0 float-left rounded-md"
-                    src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="blog"
-                  />
-                  <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                  <div>
-                    <h2
-                      class="
-                        text-indigo-900
-                        tracking-widest
-                        text-md
-                        title-font
-                        font-medium
-                        text-gray-400
-                        mb-1
-                      "
-                    >
-                      Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih
-                      Jasa Tour Travel untuk Liburan Keluarga
-                    </h2>
-                  </div>
-                </div>
+                <div v-for="(tag, index) in article.slice(0, 4)" :key="tag">
+                  <router-link
+                    :to="{
+                      name: 'ArticleRead',
+                      params: {
+                        id: index,
+                        judul: 'article',
+                        image: article[index].article_medias[0].media.url,
+                        deskripsi: tag.deskripsi,
+                      },
+                    }"
+                  >
+                    <div class="flex mb-10 bg-white">
+                      <img
+                        class="mr-4 min-h-0 min-w-0 float-left w-full"
+                        v-bind:src="article[index].article_medias[0].media.url"
+                      />
 
-                <div class="flex mb-10 bg-white">
-                  <img
-                    class="mr-4 min-h-0 min-w-0 float-left rounded-md"
-                    src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="blog"
-                  />
-                  <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                  <div>
-                    <h2
-                      class="
-                        text-indigo-900
-                        tracking-widest
-                        text-md
-                        title-font
-                        font-medium
-                        text-gray-400
-                        mb-1
-                      "
-                    >
-                      Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih
-                      Jasa Tour Travel untuk Liburan Keluarga
-                    </h2>
-                  </div>
-                </div>
-
-                <div class="flex mb-10 bg-white">
-                  <img
-                    class="mr-4 min-h-0 min-w-0 float-left rounded-md"
-                    src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="blog"
-                  />
-                  <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                  <div>
-                    <h2
-                      class="
-                        text-indigo-900
-                        tracking-widest
-                        text-md
-                        title-font
-                        font-medium
-                        text-gray-400
-                        mb-1
-                      "
-                    >
-                      Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih
-                      Jasa Tour Travel untuk Liburan Keluarga
-                    </h2>
-                  </div>
-                </div>
-
-                <div class="flex mb-10 bg-white">
-                  <img
-                    class="mr-4 min-h-0 min-w-0 float-left rounded-md"
-                    src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="blog"
-                  />
-                  <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                  <div>
-                    <h2
-                      class="
-                        text-indigo-900
-                        tracking-widest
-                        text-md
-                        title-font
-                        font-medium
-                        text-gray-400
-                        mb-1
-                      "
-                    >
-                      Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih
-                      Jasa Tour Travel untuk Liburan Keluarga
-                    </h2>
-                  </div>
-                </div>
-
-                <div class="flex mb-10 bg-white">
-                  <img
-                    class="mr-4 min-h-0 min-w-0 float-left rounded-md"
-                    src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="blog"
-                  />
-                  <!-- <img style="width:100%" :src="userProfilePic.banner_img[0].url" alt=""> -->
-                  <div>
-                    <h2
-                      class="
-                        text-indigo-900
-                        tracking-widest
-                        text-md
-                        title-font
-                        font-medium
-                        text-gray-400
-                        mb-1
-                      "
-                    >
-                      Ingin Liburan Seru Dengan Tour Travel? Coba 7 Tips Memilih
-                      Jasa Tour Travel untuk Liburan Keluarga
-                    </h2>
-                  </div>
+                      <div>
+                        <h2
+                          class="text-indigo-900 tracking-widest text-md title-font font-medium text-gray-400 mb-1"
+                        >
+                          {{ tag.judul }}
+                        </h2>
+                      </div>
+                    </div>
+                  </router-link>
                 </div>
               </div>
             </section>
@@ -229,6 +128,7 @@ export default Vue.extend({
   data() {
     return {
       article: [],
+      jurusan: [],
       function() {
         const lang = localStorage.getItem("lang") || "en";
         return {
@@ -239,7 +139,14 @@ export default Vue.extend({
   },
   mounted() {
     axios
-      .get("languages?_locale=en")
+      .get("jurusans")
+      .then((response) => {
+        this.jurusan = response.data;
+        // console.log(response.data)
+      })
+      .catch((error) => console.log(error));
+    axios
+      .get("articles")
       .then((response) => {
         this.article = response.data;
         // console.log(response.data)
