@@ -19,7 +19,7 @@
           <!-- Bagian Left Side Gan -->
 
           <div class="lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ...">
-            <h1 class="text-white font-semibold text-4xl mt-4 mb-24">
+            <h1 class="text-white font-semibold text-4xl mt-4 mb-10">
               {{ jurusan[0].judul }}
             </h1>
             <img
