@@ -1,0 +1,15 @@
+name: Deploy to Firebase
+on:
+  push:
+    branches:
+      - master
+jobs:
+  main:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Firebase
+        uses: sws2apps/firebase-deployment@[--pin--]
+        env:
+          FIREBASE_TOKEN: ${{ 1//0goDW44Dwt6ioCgYIARAAGBASNgF-L9IrSC-6aeacFSDJyp41JGYLRh2qUd-1T0ctP-oSRho2jSVA94ZDU94in7pKOAXWRWhYQw }}
+          FIREBASE_PROJECT: ${{ FIREBASE_SERVICE_ACCOUNT_B4_JTK }}
