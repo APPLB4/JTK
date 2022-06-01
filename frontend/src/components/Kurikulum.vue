@@ -1,16 +1,44 @@
 <template>
   <div class="bg-JTK">
     <Navbar />
+    <div class="w-full pt-1 mb-1">
+      <img class="w-full h-102" src="/img/jurusan.jpg" alt="blog" />
+    </div>
+
+    <hr class="mb-10" />
+
     <div class="mx-24 mt-10 mb-10">
       <div>
         <h1 class="text-white text-4xl mb-4">Kurikulum</h1>
       </div>
 
       <div class="flex flex-row">
-        <button class="bg-second px-8 mr-4 b-height">
+        <button
+          class="px-8 mr-4 b-height"
+          @click="
+            clicked2020 = true;
+            clicked2016 = false;
+            choosedKurikulum = kurikulum[0];
+          "
+          v-bind:class="{
+            ungu: !clicked2020,
+            unguTua: clicked2020,
+          }"
+        >
           <p class="text-white text-center mb-0">Kurikulum 2020</p>
         </button>
-        <button class="bg-second px-8 mr-4">
+        <button
+          class="px-8 mr-4"
+          @click="
+            clicked2020 = false;
+            clicked2016 = true;
+            choosedKurikulum = kurikulum[1];
+          "
+          v-bind:class="{
+            ungu: !clicked2016,
+            unguTua: clicked2016,
+          }"
+        >
           <p class="text-white text-center mb-0">Kurikulum 2016</p>
         </button>
       </div>
@@ -19,39 +47,18 @@
         <!-- <div class="my-10"></div> -->
 
         <div class="m-10">
-          <h1 class="text-white mb-10 text-bold text-3xl text-justify">
-            Kurikulum 2020
-          </h1>
-          <h1 class="text-white text-xl text-justify">
-            Sabtu (14/11/2020), Politeknik Negeri Bandung menggelar Sidang
-            terbuka senat Politeknik Negeri Bandung Wisuda Program Magister
-            Terapan, Sarjana Terapan, dan Diploma Tahun Akademik 2019/2020.
-            Wisuda diselenggarakan secara offline di Pendopo Tony Seowandito dan
-            online melalui media Youtube sebagai antisipasi penyebaran virus
-            covid-19. Berikut merupakan video live-streaming wisuda Polban 2020.
-            Acara dimulai pada 8.50 WIB dan berakhir pukul 12.00 WIB. Pada
-            wisuda tahun ini JTK berhasil meraih gelar wisudawan terbaik D3
-            se-Polban berkat M Wahyu Maulana Akbar (171511019).
+          <h1 class="text-white mb-13 text-bold text-center text-4xl">
+            {{ choosedKurikulum.judul }}
           </h1>
 
           <img
             class="mx-auto my-10 w-1/2 rounded-md"
-            src="/img/juara.jpg"
+            v-bind:src="choosedKurikulum.media[0].url"
             alt="blog"
           />
+
           <h1 class="text-white text-xl text-justify">
-            Wisudawan dari Jurusan Teknik Komputer dan Informatika mengikuti
-            acara ramah tamah mulai pukul 13.00 WIB yang diselenggarakan oleh
-            manejemen JTK lewat aplikasi zoom. Kegiatan tersebut diisi dengan
-            sambutan manajemen, wisudawan terbaik, serta industri. Selanjutnya
-            dilaksanakan pula sesi tanya jawab dan penyampaian kesan dan pesan
-            oleh wisudawan dari JTK. Wisuda tahun 2020 ini adalah wisuda ke 30
-            tahun, setelah JTK pindah ke kampus Ciwaruga. Sebelumnya JTK,
-            beraada di kampus Ganesha, dibawah binaan ITB. Harapan kita semua
-            agar JTK semakin dapat menjalankan amanahnya sebagai institusi
-            pendidikan yang cukup tua. Selamat kepada wisudawan D3 dan D4 JTK
-            Polban ! Semoga ilmu yang telah didapatkan selama kuliah di JTK
-            dapat menjadi bekal untuk melangkah lebih jauh ke puncak kesuksesan
+            {{ choosedKurikulum.deskripsi }}
           </h1>
         </div>
       </div>
@@ -65,18 +72,47 @@
 .b-height {
   height: 40px;
 }
+.ungu {
+  background-color: rgb(139 92 246);
+}
+.unguTua {
+  background-color: rgb(91 33 182);
+}
 </style>
 
 <script lang="ts">
 import Vue from "vue";
 import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";
+import axios from "axios";
 
 export default Vue.extend({
   components: { Footer, Navbar },
 
   data() {
-    return {};
+    return {
+      kurikulum: [],
+      choosedKurikulum: [],
+      clicked2016: false,
+      clicked2020: true,
+      function() {
+        const lang = localStorage.getItem("lang") || "en";
+        return {
+          lang: lang,
+        };
+      },
+    };
+  },
+
+  mounted() {
+    axios
+      .get("kurikulums")
+      .then((response) => {
+        this.kurikulum = response.data;
+        this.choosedKurikulum = this.kurikulum[0];
+        // console.log(response.data);
+      })
+      .catch((error) => console.log(error));
   },
 });
 </script>

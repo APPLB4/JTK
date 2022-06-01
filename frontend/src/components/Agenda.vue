@@ -2,28 +2,17 @@
   <div class="bg-JTK">
     <Navbar />
 
-    <div class="w-full pt-10">
-      <img
-        class="
-          lg:h-48
-          md:h-36
-          w-full
-          object-cover object-center
-          scale-110
-          transition-all
-          duration-400
-          hover:scale-100
-        "
-        src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
-        alt="blog"
-      />
+    <div class="w-full pt-1 mb-1">
+      <img class="w-full h-102" src="/img/jurusan.jpg" alt="blog" />
     </div>
 
+    <hr class="mb-10" />
+
     <!-- component -->
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 pt-10 mx-auto mb-10">
+    <section class="text-gray-600 body-font mt-2">
+      <div class="container px-5 pt-2 mx-auto mb-10">
         <div>
-          <h1 class="text-white mb-1 text-3xl">Agenda</h1>
+          <h1 class="text-white mb-1 font-semibold text-4xl">Agenda</h1>
         </div>
         <div>
           <a href="#">
@@ -47,27 +36,10 @@
               }"
             >
               <div
-                class="
-                  h-full
-                  rounded
-                  shadow-cla-blue
-                  bg-gradient-to-r
-                  from-indigo-50
-                  to-blue-50
-                  overflow-hidden
-                "
+                class="h-full rounded shadow-cla-blue bg-gradient-to-r from-indigo-50 to-blue-50 overflow-hidden"
               >
                 <img
-                  class="
-                    lg:h-48
-                    md:h-36
-                    w-full
-                    object-cover object-center
-                    scale-110
-                    transition-all
-                    duration-400
-                    hover:scale-100
-                  "
+                  class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                   v-bind:src="article[index].kegiatan_medias[0].media.url"
                 />
                 <div class="p-6">
@@ -77,18 +49,7 @@
 
                   <div class="flex items-center flex-wrap">
                     <button
-                      class="
-                        bg-gradient-to-r
-                        from-cyan-400
-                        to-blue-400
-                        hover:scale-105
-                        drop-shadow-md
-                        shadow-cla-blue
-                        px-4
-                        py-1
-                        rounded-lg
-                        outline-second
-                      "
+                      class="bg-gradient-to-r from-cyan-400 to-blue-400 hover:scale-105 drop-shadow-md shadow-cla-blue px-4 py-1 rounded-lg outline-second"
                     >
                       Learn more
                     </button>
@@ -111,54 +72,25 @@
 
       <a
         href="#"
-        class="
-          px-4
-          py-2
-          text-gray-700
-          bg-gray-200
-          rounded-md
-          hover:bg-blue-400 hover:text-white
-        "
+        class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white"
       >
         1
       </a>
       <a
         href="#"
-        class="
-          px-4
-          py-2
-          text-gray-700
-          bg-gray-200
-          rounded-md
-          hover:bg-blue-400 hover:text-white
-        "
+        class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white"
       >
         2
       </a>
       <a
         href="#"
-        class="
-          px-4
-          py-2
-          text-gray-700
-          bg-gray-200
-          rounded-md
-          hover:bg-blue-400 hover:text-white
-        "
+        class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white"
       >
         3
       </a>
       <a
         href="#"
-        class="
-          px-4
-          py-2
-          font-bold
-          text-gray-500
-          bg-gray-300
-          rounded-md
-          hover:bg-blue-400 hover:text-white
-        "
+        class="px-4 py-2 font-bold text-gray-500 bg-gray-300 rounded-md hover:bg-blue-400 hover:text-white"
       >
         Next
       </a>

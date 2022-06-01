@@ -2,12 +2,8 @@
   <div class="bg-JTK">
     <Navbar />
 
-    <div class="w-full pt-10 mb-10">
-      <img
-        class="w-full h-96"
-        src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
-        alt="blog"
-      />
+    <div class="w-full pt-1 mb-1">
+      <img class="w-full h-102" src="/img/jurusan.jpg" alt="blog" />
     </div>
 
     <hr class="mb-10" />
@@ -23,7 +19,7 @@
                 <h1
                   class="text-white flex flex-wrap font-semibold text-2xl pt-5 mb-10"
                 >
-                  Artikel Lainnya
+                  List Kerja Sama
                 </h1>
 
                 <div v-for="(tag, index) in article.slice(0, 4)" :key="tag">
@@ -60,7 +56,7 @@
 
           <!-- Bagian Left Side Gan -->
 
-          <div class="lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ...">
+          <div class="lg:w-3/4 sm:w-full pl-5 lg:pr-20 sm:pr-0 ...">
             <h1 class="text-white font-semibold text-5xl mt-4 mb-24">
               {{ $route.params.judul }}
             </h1>

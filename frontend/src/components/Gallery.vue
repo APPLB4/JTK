@@ -2,6 +2,12 @@
   <div class="bg-JTK">
     <Navbar />
 
+    <div class="w-full pt-1 mb-1">
+      <img class="w-full h-102" src="/img/jurusan.jpg" alt="blog" />
+    </div>
+
+    <hr class="mb-10" />
+
     <h1 class="text-4xl mx-4 my-4 text-center font-serif text-white">
       Gallery
     </h1>
