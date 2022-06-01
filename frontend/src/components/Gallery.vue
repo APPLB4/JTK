@@ -2,9 +2,11 @@
   <div class="bg-JTK">
     <Navbar />
 
-    <h1 class="text-4xl mx-4 mb-10 my-4 font-serif text-white">Gallery</h1>
+    <h1 class="text-4xl mx-4 my-4 text-center font-serif text-white">
+      Gallery
+    </h1>
 
-    <h1 class="text-4xl mx-4 my-4 font-serif text-white">Image</h1>
+    <h1 class="text-3xl mx-4 my-4 font-serif text-white">Image</h1>
 
     <div
       class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4"
@@ -102,7 +104,7 @@
       </div>
     </div>
 
-    <h1 class="text-4xl mx-4 my-4 font-serif text-white">Video</h1>
+    <h1 class="text-3xl mx-4 my-4 font-serif text-white">Video</h1>
 
     <div
       class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4"

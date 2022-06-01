@@ -56,7 +56,7 @@
               <a href="/ProfilPegawai">Pegawai</a>
               <a href="/ProfilProdi">Prodi</a>
               <a href="/ProfilJurusan">Jurusan</a>
-              <a href="/">Tracer Studi</a>
+              <a href="/TracerStudy">Tracer Studi</a>
             </div>
           </a>
           <a
@@ -82,23 +82,22 @@
             <div class="text-white">Agenda</div>
           </a>
           <a
-          
             class="dropdown navlist relative inline-block flex items-center justify-center block py-3 px-1 text-white font-lato font-semibold rounded mx-1"
             style="white-space: nowrap"
           >
-          <router-link
-                    :to="{
-                      name: 'InfoKerjasama',
-                      params: {
-                        id: 1,
-                        judul: article[0].judul,
-                        image: article[0].media[0].url,
-                        deskripsi: article[0].deskripsi,
-                      },
-                    }"
-                  >
-            <div class="text-white">Kerja Sama</div>
-          </router-link>
+            <router-link
+              :to="{
+                name: 'InfoKerjasama',
+                params: {
+                  id: 0,
+                  judul: article[0].judul,
+                  image: article[0].media[0].url,
+                  deskripsi: article[0].deskripsi,
+                },
+              }"
+            >
+              <div class="text-white">Kerja Sama</div>
+            </router-link>
           </a>
           <a
             href="/TujuanKontak"
@@ -106,7 +105,6 @@
           >
             <div class="text-white">Kontak</div>
           </a>
-          
         </nav>
       </div>
     </div>
@@ -205,32 +203,32 @@ export default Vue.extend({
 
   data() {
     return {
-      CMS_API: process.env.VUE_APP_CMS_API,
-      navbarList: [],
-      logoHeader: [],
+      // CMS_API: process.env.VUE_APP_CMS_API,
+      // navbarList: [],
+      // logoHeader: [],
       isOpen: false,
       state: "close",
       scrollPosition: 0,
       article: [],
     };
   },
-  created() {
-    this.fetchData();
-  },
+  // created() {
+  //   this.fetchData();
+  // },
   methods: {
-    async fetchData() {
-      const navbarList = await axios.get(this.CMS_API + "/navigation-menu");
-      const logoHeader = await axios.get(this.CMS_API + "/logo-header");
-      this.navbarList = navbarList.data;
-      this.logoHeader = logoHeader.data;
-    },
+    // async fetchData() {
+    //   const navbarList = await axios.get(this.CMS_API + "/navigation-menu");
+    //   const logoHeader = await axios.get(this.CMS_API + "/logo-header");
+    //   this.navbarList = navbarList.data;
+    //   this.logoHeader = logoHeader.data;
+    // },
   },
-   mounted() {
+  mounted() {
     axios
       .get("kerjasamas")
       .then((response) => {
         this.article = response.data;
-        // console.log(response.data)
+        console.log(this.article[0].judul);
       })
       .catch((error) => console.log(error));
   },
