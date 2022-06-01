@@ -15,6 +15,7 @@ import Gallery from "../views/GalleryView.vue";
 import Kurikulum from "../views/KurikulumView.vue";
 import TracerStudy from "../views/TracerStudyView.vue";
 import DetailPegawai from "../views/PegawaiDetailView.vue";
+import DetailDosen from "../views/DosenDetailView.vue";
 
 Vue.use(VueRouter);
 
@@ -93,6 +94,11 @@ const routes = [
     path: "/DetailPegawai",
     name: "DetailPegawai",
     component: DetailPegawai,
+  },
+  {
+    path: "/DetailDosen",
+    name: "DetailDosen",
+    component: DetailDosen,
   },
 ];
 
