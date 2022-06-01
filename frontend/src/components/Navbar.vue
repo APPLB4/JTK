@@ -106,26 +106,7 @@
           >
             <div class="text-white">Kontak</div>
           </a>
-          <div class="flex flex-row mt3 w-full">
-            <div class="flex justify-center items-center">
-              <div class="email-input-box w-full ml5 mr5">
-                <input
-                  id="search-card"
-                  style="width: 220px"
-                  class="w-full font-lato font-normal text-l ml-3 mt-2 outline-none color-white flex justify-center items-center"
-                  type="text"
-                />
-              </div>
-            </div>
-            <div class="flex justify-center items-center mt5">
-              <button
-                @click="getSearchValue"
-                class="email-subscribe-btn text-white font-lato font-normal text-base mt4"
-              >
-                Search
-              </button>
-            </div>
-          </div>
+          
         </nav>
       </div>
     </div>
