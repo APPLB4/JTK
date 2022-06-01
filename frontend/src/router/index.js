@@ -1,19 +1,20 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 // import LandingPage from '../views/LandingPageView.vue'
-import ListArticle from '../views/ListArticleView.vue'
-import ProfilJurusan from '../views/ProfilJurusanView.vue'
-import ProfilProdi from '../views/ProfilProdiView.vue'
-import ArticleRead from '../views/ArticleReadView.vue'
-import InfoKerjasama from '../views/InfoKerjasamaView.vue'
-import Agenda from '../views/AgendaView.vue'
-import TujuanKontak from '../views/TujuanKontakView.vue'
-import Prestasi from '../views/PrestasiView.vue'
-import ProfilPegawai from '../views/ProfilPegawaiView.vue'
-import Fasilitas from '../views/FasilitasView.vue'
-import Gallery from '../views/GalleryView.vue'
-import Kurikulum from '../views/KurikulumView.vue'
-import TracerStudy from '../views/TracerStudyView.vue'
+import ListArticle from "../views/ListArticleView.vue";
+import ProfilJurusan from "../views/ProfilJurusanView.vue";
+import ProfilProdi from "../views/ProfilProdiView.vue";
+import ArticleRead from "../views/ArticleReadView.vue";
+import InfoKerjasama from "../views/InfoKerjasamaView.vue";
+import Agenda from "../views/AgendaView.vue";
+import TujuanKontak from "../views/TujuanKontakView.vue";
+import Prestasi from "../views/PrestasiView.vue";
+import ProfilPegawai from "../views/ProfilPegawaiView.vue";
+import Fasilitas from "../views/FasilitasView.vue";
+import Gallery from "../views/GalleryView.vue";
+import Kurikulum from "../views/KurikulumView.vue";
+import TracerStudy from "../views/TracerStudyView.vue";
+import DetailPegawai from "../views/PegawaiDetailView.vue";
 
 Vue.use(VueRouter);
 
@@ -79,16 +80,21 @@ const routes = [
     component: Fasilitas,
   },
   {
-    path: '/Gallery',
-    name: 'Gallery',
-    component: Gallery
+    path: "/Gallery",
+    name: "Gallery",
+    component: Gallery,
   },
   {
-    path: '/TracerStudy',
-    name: 'TracerStudy',
-    component: TracerStudy
-  }
-]
+    path: "/TracerStudy",
+    name: "TracerStudy",
+    component: TracerStudy,
+  },
+  {
+    path: "/DetailPegawai",
+    name: "DetailPegawai",
+    component: DetailPegawai,
+  },
+];
 
 const router = new VueRouter({
   mode: "history",
