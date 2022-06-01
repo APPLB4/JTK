@@ -2,6 +2,12 @@
   <div class="bg-JTK">
     <Navbar />
 
+    <div class="w-full pt-1 mb-1">
+      <img class="w-full h-102" src="/img/jurusan.jpg" alt="blog" />
+    </div>
+
+    <hr class="mb-10" />
+
     <h1 class="text-3xl mx-4 my-4 font-serif text-white">Dosen</h1>
     <div class="grid gap-x-8 gap-y-3 mb-8 lg:grid-cols-4">
       <div v-for="(tag, index) in dosen" :key="tag">
