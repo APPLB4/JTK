@@ -4,10 +4,10 @@
 
     <hr class="mb-10" />
 
-    <div class="container mx-auto">
+    <div class="container mx-auto mb-20">
       <!-- Body Gan -->
       <div>
-        <div class="flex flex-wrap text-white" style="height: 600px">
+        <div class="flex flex-wrap text-white" style="height: full">
           <!-- Bagian Left Side Gan -->
 
           <div class="lg:w-1/4 sm:w-full sm:pr-0 ...">
@@ -101,7 +101,11 @@
                   >
                     Expertise
                   </th>
-                  <td class="px-6 py-4">{{ $route.params.expertise }}</td>
+                  <td class="px-6 py-4">
+                    <div v-for="tag in $route.params.expertise" :key="tag">
+                      {{ tag.keahlian }}
+                    </div>
+                  </td>
                 </tr>
                 <tr
                   class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
@@ -112,7 +116,11 @@
                   >
                     Pengalaman
                   </th>
-                  <td class="px-6 py-4">{{ $route.params.pengalaman }}</td>
+                  <td class="px-6 py-4">
+                    <div v-for="tag in $route.params.pengalaman" :key="tag">
+                      {{ tag.pengalaman }}
+                    </div>
+                  </td>
                 </tr>
                 <tr
                   class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
@@ -123,7 +131,11 @@
                   >
                     Publikasi
                   </th>
-                  <td class="px-6 py-4">{{ $route.params.publikasi }}</td>
+                  <td class="px-6 py-4">
+                    <div v-for="tag in $route.params.publikasi" :key="tag">
+                      {{ tag.publikasi }}
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>

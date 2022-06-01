@@ -18,8 +18,8 @@
               matkul: dosen[index].matkul,
               jabatan: dosen[index].jabatan,
               expertise: dosen[index].expertise,
-              pengalaman: dosen[index].pengalaman,
-              publikasi: dosen[index].publikasi,
+              pengalaman: dosen[index].experiences,
+              publikasi: dosen[index].publication,
             },
           }"
         >
@@ -116,7 +116,7 @@ export default Vue.extend({
       .get("dosens")
       .then((response) => {
         this.dosen = response.data;
-        // console.log(response.data)
+        console.log(this.dosen[1].jabatan);
       })
       .catch((error) => console.log(error));
     axios

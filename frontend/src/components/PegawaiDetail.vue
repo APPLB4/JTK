@@ -7,7 +7,7 @@
     <div class="container mx-auto">
       <!-- Body Gan -->
       <div>
-        <div class="flex flex-wrap text-white" style="height: 600px">
+        <div class="flex flex-wrap text-white" style="height: 350px">
           <!-- Bagian Left Side Gan -->
 
           <div class="lg:w-1/4 sm:w-full sm:pr-0 ...">
