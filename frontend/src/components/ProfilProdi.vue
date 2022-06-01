@@ -2,15 +2,16 @@
   <div class="bg-JTK">
     <Navbar />
 
-    <div class="w-full pt-10 mb-10">
+    <div class="w-full mb-2">
       <img
         class="w-full h-96"
-        src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+        src="/img/papan-jurusan.jpg"
+        style="max-width: auto; height: 60%"
         alt="blog"
       />
     </div>
 
-    <hr class="mb-10" />
+    <hr class="mb-5" />
 
     <div class="container mx-auto">
       <!-- Body Gan -->
@@ -19,21 +20,35 @@
           <!-- Bagian Left Side Gan -->
 
           <div class="mb-10 text-white lg:w-3/4 sm:w-full lg:pr-20 sm:pr-0 ...">
-            <h1 class="text-white font-semibold text-5xl mt-4 mb-24">Prodi</h1>
+            <h1 class="text-white font-semibold text-5xl mb-24">Prodi</h1>
             <div class="grid grid-cols-8">
               <div class="col-start-3 col-end-9 ml-4">
                 <div class="flex flex-row">
                   <button
-                    class="bg-second p-2 px-4 mr-4"
-                    @click="deskripsi = 'visimisi'"
+                    class="p-2 px-4 mr-4"
+                    @click="
+                      changeClicked('VM');
+                      deskripsi = 'visimisi';
+                    "
+                    v-bind:class="{
+                      ungu: !clickedVisiMisi,
+                      unguTua: clickedVisiMisi,
+                    }"
                   >
                     <p class="text-white text-center mb-0">Visi misi</p>
                   </button>
                   <button
-                    class="bg-second p-2 px-4 mr-4"
-                    @click="deskripsi = 'profillulusan'"
+                    class="p-2 px-4 mr-4"
+                    @click="
+                      changeClicked('PL');
+                      deskripsi = 'profillulusan';
+                    "
+                    v-bind:class="{
+                      ungu: !clickedProfilLulusan,
+                      unguTua: clickedProfilLulusan,
+                    }"
                   >
-                    <p class="text-white text-center mb-0">Profil Jurusan</p>
+                    <p class="text-white text-center mb-0">Profil Lulusan</p>
                   </button>
                 </div>
               </div>
@@ -41,16 +56,25 @@
               <div class="col-start-1 col-end-3 mt-4">
                 <div class="">
                   <button
-                    class="bg-second p-2 mr-4 w-full mb-4"
-                    @click="prodi = article[0].namaprodi"
+                    class="p-2 mr-4 w-full mb-4"
+                    @click="
+                      changeClicked('D3');
+                      prodi = article[0].namaprodi;
+                    "
+                    v-bind:class="{ ungu: !clickedD3, unguTua: clickedD3 }"
                   >
                     <p class="text-white text-center mb-0">
                       D3 - Teknik Informatika
                     </p>
                   </button>
+
                   <button
-                    class="bg-second p-2 mr-4 w-full mb-4"
-                    @click="prodi = article[1].namaprodi"
+                    class="p-2 mr-4 w-full mb-4"
+                    @click="
+                      changeClicked('D4');
+                      prodi = article[1].namaprodi;
+                    "
+                    v-bind:class="{ ungu: !clickedD4, unguTua: clickedD4 }"
                   >
                     <p class="text-white text-center mb-0">
                       D4 - Teknik Informatika
@@ -134,6 +158,15 @@
   </div>
 </template>
 
+<style scoped>
+.ungu {
+  background-color: rgb(139 92 246);
+}
+.unguTua {
+  background-color: rgb(91 33 182);
+}
+</style>
+
 <script lang="ts">
 import Vue from "vue";
 import Footer from "./Footer.vue";
@@ -146,9 +179,14 @@ export default Vue.extend({
   data() {
     return {
       article: [],
+      clicked: false,
+      clickedVisiMisi: true,
+      clickedProfilLulusan: false,
+      clickedD3: true,
+      clickedD4: false,
       articlee: [],
-      prodi: [],
-      deskripsi: {},
+      prodi: "D3 Teknik Informatika",
+      deskripsi: "visimisi",
     };
   },
   mounted() {
@@ -170,6 +208,24 @@ export default Vue.extend({
   methods: {
     changeprodi() {},
     changedeskripsi() {},
+    changeClicked(value) {
+      console.log(this.article[1].namaprodi);
+      let keyword = value;
+      console.log(keyword);
+      if (keyword == "VM") {
+        this.clickedVisiMisi = true;
+        this.clickedProfilLulusan = false;
+      } else if (keyword == "PL") {
+        this.clickedVisiMisi = false;
+        this.clickedProfilLulusan = true;
+      } else if (keyword == "D3") {
+        this.clickedD3 = true;
+        this.clickedD4 = false;
+      } else {
+        this.clickedD3 = false;
+        this.clickedD4 = true;
+      }
+    },
   },
 });
 </script>
