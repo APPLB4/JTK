@@ -12,9 +12,9 @@
 
           <div class="lg:w-1/4 sm:w-full sm:pr-0 ...">
             <img
-              v-bind:src="$route.params.photo.url"
               style="max-width: 60%; height: auto"
               class="object-center mx-auto mb-10"
+              v-bind:src="$route.params.photo.url"
               alt=""
             />
           </div>
@@ -81,6 +81,50 @@
                   </th>
                   <td class="px-6 py-4">{{ $route.params.jabatan }}</td>
                 </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium bg-gray-50 text-gray-900 dark:text-white"
+                  >
+                    Mata Kuliah yang diampu
+                  </th>
+                  <td class="px-6 py-4">{{ $route.params.matkul }}</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium bg-gray-50 text-gray-900 dark:text-white"
+                  >
+                    Expertise
+                  </th>
+                  <td class="px-6 py-4">{{ $route.params.expertise }}</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium bg-gray-50 text-gray-900 dark:text-white"
+                  >
+                    Pengalaman
+                  </th>
+                  <td class="px-6 py-4">{{ $route.params.pengalaman }}</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium bg-gray-50 text-gray-900 dark:text-white"
+                  >
+                    Publikasi
+                  </th>
+                  <td class="px-6 py-4">{{ $route.params.publikasi }}</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -99,7 +143,7 @@ import Navbar from "./Navbar.vue";
 import axios from "axios";
 
 export default Vue.extend({
-  name: "DetailPegawai",
+  name: "DetailDosen",
   components: { Footer, Navbar },
 
   data() {
@@ -115,7 +159,7 @@ export default Vue.extend({
   },
   mounted() {
     axios
-      .get("pegawais")
+      .get("dosens")
       .then((response) => {
         this.article = response.data;
         console.log(this.article[0].nama);
