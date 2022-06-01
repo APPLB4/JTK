@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "staging": "b4-jtk",
+    "default": "b4-jtk"
+  },
+  "targets": {}
+}

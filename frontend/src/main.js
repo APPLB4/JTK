@@ -6,7 +6,7 @@ import '@/index.css'
 import axios from 'axios'
 import 'tw-elements'
 
-axios.defaults.baseURL = 'http://localhost:1337/';
+axios.defaults.baseURL = 'https://web-jtk-2022.herokuapp.com/';
 
 Vue.config.productionTip = false
 
